@@ -1,47 +1,95 @@
-<section class="section">
+<section class="section pluses__section">
     <div class="container">
-       <h2 class="title">Наші переваги</h2>
+       <h2 class="title pluses__title">Наші переваги</h2>
 
-       <ul>
-        <li>
-            <button type="button" class="plus-btn" onclick="changePlus('professionalism');">
+       <ul class="pluses-list">
+        <li class="pluses-list__item">
+            <button type="button" class="pluses-list__btn professionalism-btn active" onclick="changePlus('professionalism');">
                 Професійність
             </button>
         </li>
-        <li>
-            <button type="button" class="plus-btn" onclick="changePlus('quality');">
+        <li class="pluses-list__item">
+            <button type="button" class="pluses-list__btn quality-btn " onclick="changePlus('quality');">
                 Якість
             </button>
         </li>
-        <li>
-            <button type="button" class="plus-btn" onclick="changePlus('modernity');">
+        <li class="pluses-list__item">
+            <button type="button" class="pluses-list__btn modernity-btn" onclick="changePlus('modernity');">
                 Сучасність
             </button>
         </li>
-        <li>
-            <button type="button" class="plus-btn" onclick="changePlus('bonuses');">
+        <li class="pluses-list__item">
+            <button type="button" class="pluses-list__btn bonuses-btn" onclick="changePlus('bonuses');">
                 Бонуси
             </button>
         </li>
        </ul>
 
        <div class="plus-char">
-        <h3 class="plus-name">Професійність</h3>
-        <p class="plus-info">
-            Відповідальні майстри від 7 років досвіду, які знаються на сучасних трендах, постійно вдосконалюються та можуть довести
-            твій образ до ідеалу
-        </p>
+        <div class="plus-info">
+            <h3 class="plus-info__name">Професійність</h3>
+            <p class="plus-info__text">
+                Відповідальні майстри від 7 років досвіду, які знаються на сучасних трендах, постійно вдосконалюються та можуть
+                довести
+                твій образ до ідеалу
+            </p>
+        </div>
+        <div class="plus-img__conteiner">
+            <img class="plus-img" src="./images/pluses/professionalism.png" alt="professionalism"/>
+        </div>
        </div>
-       <div id="subscribe-mail" hidden>
-        <h3 class="">Якість</h3>
-        <p class="">
-            Щось про якість
-        </p>
-       </div>
+       
+       <!-- TABLET -->
+       <ul class="tablet-pluses">
+        <li class="tablet-pluses__item">
+            <img class="plus-img__anoth" src="./images/pluses/professionalism.png" alt="professionalism"/>
+            <div class="tablet-pluses__info">
+                <h3 class="tablet-pluses__name">Професійність</h3>
+                <p class="tablet-pluses__text">
+                    Відповідальні майстри від 7 років досвіду, які знаються на сучасних трендах, постійно вдосконалюються та можуть
+                    довести
+                    твій образ до ідеалу
+                </p>
+            </div>
+        </li>
+        <li class="tablet-pluses__item">
+            <div class="tablet-pluses__info">
+                <h3 class="tablet-pluses__name">Якість</h3>
+                <p class="tablet-pluses__text">
+                    Інвестували в найкраще обладнання та кращі продукти для догляду за волоссям та шкірою. Працюємо за принципом- якість
+                    в кожній деталі
+                </p>
+            </div>
+            <img class="plus-img__anoth" src="./images/pluses/quality.png" alt="quality" />
+            </li>
+        </li>
+        <li class="tablet-pluses__item">
+            <img class="plus-img__anoth" src="./images/pluses/modernity.png" alt="modernity" />
+            <div class="tablet-pluses__info">
+                <h3 class="tablet-pluses__name">Сучасність</h3>
+                <p class="tablet-pluses__text">
+                    Використовуємо тільки сучасні інструменти та чоловічу косметику, а в нашому Барбершопі крута чоловіча атмосфера з
+                    сучасним інтер’єром
+                </p>
+            </div>
+        </li>
+        <li class="tablet-pluses__item">
+            <div class="tablet-pluses__info">
+                <h3 class="tablet-pluses__name">Бонуси</h3>
+                <p class="tablet-pluses__text">
+                    Безкоштовні напої клієнтам, та програми лояльності
+                </p>
+            </div>
+            <img class="plus-img__anoth" src="./images/pluses/bonuses.png" alt="bonuses" />
+        </li>
+       </ul>
     </div>
 
 </section>
 
+<!-- <img class="plus-img__anoth" src="./images/pluses/bonuses.png" alt="quality" /> -->
+<!-- <img class="plus-img__anoth" src="./images/pluses/quality.png" alt="quality" /> -->
+<!-- <img class="plus-img__anoth" src="./images/pluses/modernity.png" alt="quality" /> -->
     <!-- <nav class="pluses-naw">
             <ul class="pluses-naw__list">
                 <li class="pluses-naw__item"><a href=" ">Професійність</a></li>

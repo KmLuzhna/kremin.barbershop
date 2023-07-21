@@ -1,0 +1,141 @@
+.price__section {
+    padding-top: 160px;
+    // padding-bottom: 120px;
+}
+
+.price-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    // border: 2px solid var(--accent-color);
+    width: 412px;
+    margin: 0 auto;
+}
+.price-list___kamyfluvan, 
+.price-list___stryzhky,
+.price-list___different {
+width: 412px;
+}
+.price-list__title {
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    text-transform: uppercase;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+
+    position: relative;
+    margin-top: 43px;
+
+    &::after {
+        position: absolute;
+        top: -33%;
+        left: 40%;
+        content: "";
+        display: inline-block;
+        width: 83px;
+        height: 3px;
+        background-color: var(--accent-color);
+        border-radius: 2px;
+    }
+}
+
+
+.price__container {
+    position: relative;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    padding-top: 57px;
+    padding-bottom: 115px;
+
+    max-width: 1278px;
+    height: 890px;
+    background-image: url(/src/images/price-fon.png);
+    border: 2px solid var(--accent-color);
+
+}
+.price-list__item {
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    text-transform: uppercase;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    margin-top: 24px;
+    overflow: hidden;
+}
+
+// Крапки між назвою послуги і ціною
+.price-list__item:after {
+    content: '..................................................';
+    font-weight: 200;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.service-name {
+    float: left;
+    margin-left: 2px;
+}
+.service-price {
+    float: right;
+    margin-right: 2px;
+}
+
+
+// Позиційовані елементи
+.price-background {
+    background-color: #706143;
+    height: 632px;
+    max-width: 1440px;
+    margin-top: -511px;
+}
+.line--l {
+    border-left: 1px solid var(--line-color);
+    margin: 155px 0px 94px 408px;
+    height: 815px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.line--r {
+    border-right: 1px solid var(--line-color);
+    margin: 155px 408px 94px 0px;
+
+    position: absolute;
+    height: 815px;
+    top: 0;
+    right: 0;
+}
+.price-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    margin-right: 36px;
+    margin-bottom: 27px;
+
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 21px;
+    letter-spacing: 0.05em;
+}
+.logo-price {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 25px;
+    margin-left: 56px;
+    height: 192px;
+    width: 333px;
+    fill: #3D3C3D;
+}

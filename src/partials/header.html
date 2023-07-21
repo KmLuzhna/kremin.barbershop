@@ -1,20 +1,40 @@
-<header class="header">
-    <div class="container">
-        <nav>
-            <a>Місце сили та стилю</a>
+<header class="header section">
+    <div class="container header-container">
+        <div class="header-logo">
+            <a class="header-logo__group" href="#">
+                <div>
+                    <svg width="42px" height="42px">
+                        <use href="/src/images/icons/symbol-defs-opt.svg#icon-Logo"></use>
+                    </svg>
+                </div>
+                <div class="header-logo__text">
+                    <span>Місце сили та стилю</span>
+                </div>
+            </a>
+        </div>
+        <nav class="header-nav">
+            <!-- <a>Місце сили та стилю</a> -->
             <ul class="site-nav">
-                <li class="site-nav__item"><a class="site-nav__link" href=" ">Про нас</a></li>
-                <li class="site-nav__item"><a class="site-nav__link" href=" ">Майстри</a></li>
-                <li class="site-nav__item"><a class="site-nav__link" href=" ">Послуги</a></li>
-                <li class="site-nav__item"><a class="site-nav__link" href=" ">Контакти</a></li>
+                <li class="site-nav__item"><a class="site-nav__link" href="#about">Про нас</a></li>
+                <li class="site-nav__item"><a class="site-nav__link" href="#barbers">Майстри</a></li>
+                <li class="site-nav__item"><a class="site-nav__link" href="#price">Послуги</a></li>
+                <li class="site-nav__item"><a class="site-nav__link" href="#contacts">Контакти</a></li>
             </ul>
         </nav>
-        <ul class="auth-nav">
-            <li class="auth-nav__item"><a class="auth-nav__link">instagram</a></li>
-            <li class="auth-nav__item"><a class="auth-nav__link">380 97 138 00 89</a></li>
-            <li class="auth-nav__item"><a class="auth-nav__link">Пн-сб: 9:00-19:00</a></li>
-        </ul>
-
+        <div class="auth">
+            <div class="auth-insta">
+                <a class="auth-insta__link" href="https://www.instagram.com/">
+                    <svg width="28px" height="28px">
+                        <use href="/src/images/icons/symbol-defs-opt.svg#icon-instagram-header"></use>
+                    </svg>                 
+                </a>
+            </div>
+            <ul class="auth-list">
+                <li class="auth-tel"><a class="auth-tel__link" href="tel:+380971380088">380 97 138 00 89</a></li>
+                <li class="auth-timetable"><a class="auth-timetable__link">Пн-сб: 9:00-19:00</a></li>
+            </ul>
+        </div>
+        <p class="header-adress">м. Новояворівськ, вул. Степана Бандери 1A</p>
     </div>
 
 </header>

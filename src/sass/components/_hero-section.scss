@@ -1,0 +1,45 @@
+.overlay {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    padding-top: 45px;
+
+    max-width: 1440px;
+    height: 700px;
+    background-image:url(/src/images/main-section-bkgr.png);
+
+}
+
+.main-button {
+    font-family: 'PT Serif Caption', serif;
+    display: block;
+    padding: 20px 40px;
+    margin: 0px auto 150px auto;
+    width: max-content;
+
+    color: var(--text-color);
+    background-color:var(--button-color);
+
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: auto;
+    letter-spacing: 0.05em;
+    text-decoration-line: none;
+    
+    
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+        background: rgba(0, 0, 0, 0);
+        border: 2px solid var(--accent-color);
+        cursor: pointer;
+    }
+}
+
+.main-logo {
+    width: 705px;
+    height: 375px;
+    margin: 0px auto 55px;
+}

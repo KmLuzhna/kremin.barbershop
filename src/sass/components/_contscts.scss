@@ -1,0 +1,187 @@
+.contact__section {
+    padding-top: 88px;
+    padding-bottom: 27px;
+}
+
+.contact__container {
+    position: relative;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    padding-top: 56px;
+
+    max-width: 1280px;
+    height: 808px;
+    background-image: url(/src/images/contacts-bkgr.png);
+
+    @include for-desktop {
+        height: 808px;
+        }
+    
+    @include for-tablet-only {
+        padding-top: 42px;
+        height: 694px;
+        }
+    @include for-mobile-only {
+        height: auto;
+        }
+
+
+
+}
+
+.form__container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 88px;
+
+    @include for-mobile-and-tablet {
+        margin-top: 0px;
+        }
+}
+
+// ФОРМА
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 109px;
+
+    @include for-tablet-only {
+            width: 446px;
+            margin: 0px auto;
+            align-items: center;
+        }
+    @include for-mobile-only {
+            width: 358px;
+            margin: 0px auto;
+            align-items: center;
+            
+        }
+
+}
+.form-title {
+    @include for-tablet-only {
+            margin-bottom: 24px;
+        }
+    @include for-mobile-only {
+            font-size: 25px;
+            margin-bottom: 48px;
+            
+        }
+}
+.form__label {
+    background-color: #11ffee00;
+    border: 2px solid #ADABAB;
+    margin-bottom: 24px;
+    
+    
+}
+
+.form__input {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 519px;
+    padding: 24px 20px;
+    border: none;
+
+    @include for-tablet-only {
+            width: 405px;
+        }
+    @include for-mobile-only {
+            width: 318px;
+            font-size: 18px;
+        }
+
+    &:hover,
+    &:focus {
+        border: 2px solid #FFFFFF;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    }
+}
+
+.form__text {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+
+    width: 519px;
+    // height: 228px;
+    padding: 24px 20px 0px;
+
+    @include for-tablet-only {
+            width: 405px;
+        }
+    @include for-mobile-only {
+            width: 318px;
+            font-size: 18px;
+        }
+}
+
+.form__button{
+    font-family: 'PT Serif Caption', serif;
+    display: block;
+    width: max-content;
+
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: auto;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    
+    @include for-desktop {
+        padding: 20px 26px;
+            border: 0px;
+            background-color: var(--background-color);
+        }
+    
+    @include for-mobile-and-tablet {
+            padding: 20px 80px 20px 80px;
+            background-color: var(--button-color);
+            border: 1px;
+        }
+    @include for-mobile-only {
+            font-size: 20px;
+            margin-bottom: 105px;
+        }
+
+    &:hover,
+    &:focus {
+        // color: var(--accent-color);
+        background-color: #A18753;
+    }
+}
+
+// КАРТА
+.location {
+    @include for-mobile-and-tablet {
+            display: none;
+        }
+}
+.location__text {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+    text-align: center;
+    margin-bottom: 8px;
+}
+.location__map{
+    width: 519px;
+    height: 385px;
+}
