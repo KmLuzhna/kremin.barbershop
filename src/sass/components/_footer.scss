@@ -11,12 +11,63 @@
     display: flex;
     justify-content: space-between;
     // align-items: center;
+
+    @include for-mobile-and-tablet {
+        flex-direction: column;
+        // align-items: center;
+    }
+}
+// LOCATION-------------------------
+.footer-location{
+    @include for-desktop {
+            display: none;
+        }
+    @include for-mobile-and-tablet {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+        align-items: center;
+        }
+}
+
+.footer-location__map {
+    @include for-tablet-only {
+        border: 0;
+        min-width: 680px;
+        min-height: 328px;
+    }
+
+    @include for-mobile-only {
+        border: 0;
+        width: 357px;
+        height: 328px;
+    }
+}
+.footer-location__title {
+     @include for-mobile-and-tablet {
+        font-family: PT Serif Caption;
+        text-transform: uppercase;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 48px;
+        letter-spacing: 0.03em;
+        text-align: center;
+        margin-bottom: 4px;
+    }
+
+    @include for-mobile-only {
+        font-size: 20px;
+        line-height: 27px;
+    }
 }
 
 
-
+// NAV-LIST----------------------------
 .footer-nav__list{
 display: flex;
+@include for-mobile-and-tablet {
+        display: none;
+    }
 }
 .footer-nav__item:not(:last-child) {
         margin-right: 16px;
@@ -37,6 +88,17 @@ display: flex;
     }
 }
 
+// ADRESS-LIST------------------------
+.contact-info {
+    @include for-tablet-only {
+        width: 680px;
+        margin-bottom: 88px;
+    }
+    @include for-mobile-only {
+        margin-bottom: 78px;
+    }
+}
+
 .address-list {
     display: flex;
     flex-direction: column;
@@ -44,16 +106,36 @@ display: flex;
     &__item:not(:last-child) {
             margin-bottom: 20px;
         }
+
+    @include for-mobile-only {
+    &__item:not(:last-child) {
+            margin-bottom: 16px;
+        }
+    }
+   
 }
 .address-list__link {
     font-family: 'PT Serif Caption';
     color: var(--text-color);
     font-weight: 400;
-    font-size: 16px;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.05em;
     text-decoration-line: none;
     font-style: normal;
-    // padding: 20px 0;
+
+    @include for-desktop {
+        font-size: 16px;
+        line-height: 21px;
+        }
+
+    @include for-tablet-only {
+        font-size: 22px;
+        line-height: 29px;
+    }
+
+    @include for-mobile-only {
+        font-size: 16px;
+        line-height: 21px; 
+    }
 
     &:hover,
     &:focus {
@@ -61,24 +143,42 @@ display: flex;
     }
 }
 
+
+// ЛОГОТИПИ ФУТЕРА
 .law {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-
-    margin-right: 80px;
-    margin-bottom: 47px;
-
     font-family: 'PT Serif Caption';
     color: var(--text-color);
     font-weight: 400;
-    font-size: 14px;
     letter-spacing: 0.05em;
+    
+    @include for-desktop {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        margin-right: 80px;
+        margin-bottom: 47px;
+        
+        font-size: 14px;
+        line-height: 19px;
+    }
+    @include for-tablet-only{
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+    }
+     @include for-mobile-only{
+        font-size: 16px;
+        line-height: 21px;
+        text-align: center;
+    }
 }
 .footer-logo {
-    height: 149px;
+    @include for-desktop {
+        height: 149px;
         width: 294px;
         margin: -167px auto 16px;
+    }
 }
 
 .footer-logo__link {
@@ -92,6 +192,10 @@ display: flex;
 .footer-insta {
     margin: 6px auto 0px;
         text-align: center;
+
+    @include for-mobile-and-tablet {
+        display: none;
+    }
 }
 .footer-insta__link {
     fill: var(--text-color);
@@ -103,4 +207,5 @@ display: flex;
 .icon-footer {
     margin-right: 12px;
     padding: 0px;
+
 }

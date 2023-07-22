@@ -2,6 +2,21 @@
     <div class="container">
        <h2 class="title pluses__title">Наші переваги</h2>
 
+       <ul class="mob-btn-list">
+        <li class="mob-btn__item">
+            <button type="button" class="mob-btn professionalism-mob-btn active" onclick="changePlus('professionalism');">1</button>
+        </li>
+        <li class="mob-btn__item">
+            <button type="button" class="mob-btn quality-btn" onclick="changePlus('quality');">2</button>
+        </li>
+        <li class="mob-btn__item">
+            <button type="button" class="mob-btn modernity-btn" onclick="changePlus('modernity');">3</button>
+        </li>
+        <li class="mob-btn__item">
+            <button type="button" class="mob-btn bonuses-btn" onclick="changePlus('bonuses');">4</button>
+        </li>
+       </ul>
+
        <ul class="pluses-list">
         <li class="pluses-list__item">
             <button type="button" class="pluses-list__btn professionalism-btn active" onclick="changePlus('professionalism');">
@@ -9,7 +24,7 @@
             </button>
         </li>
         <li class="pluses-list__item">
-            <button type="button" class="pluses-list__btn quality-btn " onclick="changePlus('quality');">
+            <button type="button" class="pluses-list__btn quality-btn" onclick="changePlus('quality');">
                 Якість
             </button>
         </li>
@@ -25,6 +40,7 @@
         </li>
        </ul>
 
+       <h3 class="plus-mob__name">Професійність</h3>
        <div class="plus-char">
         <div class="plus-info">
             <h3 class="plus-info__name">Професійність</h3>
@@ -38,6 +54,7 @@
             <img class="plus-img" src="./images/pluses/professionalism.png" alt="professionalism"/>
         </div>
        </div>
+       
        
        <!-- TABLET -->
        <ul class="tablet-pluses">

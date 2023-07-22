@@ -51,9 +51,14 @@
 
 }
 
+
 .plus-char {
     display: flex;
     justify-content: space-between;
+
+    @include for-mobile-only {
+        flex-direction: column-reverse;
+    }
 }
 
 .plus-info__name {
@@ -69,6 +74,10 @@
     font-size: 32px;
     letter-spacing: 0.03em;
     text-align: start;
+
+    @include for-mobile-only {
+        display: none;
+    }
 
     &::after {
         position: absolute;
@@ -100,12 +109,24 @@
     @include for-tablet-only {
             display: none;
         }
+    @include for-mobile-only {
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        margin: 20px 0px;
+    }
 }
 
 .plus-img {
     @include for-tablet-only {
             display: none;
         }
+    @include for-mobile-only {
+        width: 358px;
+            height: auto;
+
+            // height: 196px;
+    }
 }
 .plus-img__anoth {
     @media (min-width: 1440px) {
@@ -116,15 +137,20 @@
     // height: 265px;
     height: auto;
         }
+    @include for-mobile-only {
+    // width: 358px;
+    // height: auto;
+        // height: 196px; 
+    }
 }
 
-.active {
-    background-color: #A18753;
-}
 
 // Tablet
 .tablet-pluses {
-    @media (min-width: 1440px) {
+    @media (min-width: 1440px)  {
+         display: none;
+        }
+    @media (max-width: 743px)  {
          display: none;
         }
 }
@@ -165,3 +191,57 @@ margin-left: 20px;
 .tablet-pluses__info:nth-child(2n+1) {
     margin-right: 20px;
 }
+
+
+// КНОПКИ ДЛЯ МОБІЛЬНОЇ ВЕРСІЇ
+
+.mob-btn-list {
+    @media (min-width: 744px) {
+            display: none;
+    }
+    display: flex;
+    justify-content: center;
+    margin: 0px auto 33px;
+}
+
+.mob-btn__item {
+    &:not(:last-child) {
+            margin-right: 10px;
+        }
+}
+
+.mob-btn {
+    width: 44px;
+    height: 44px;
+    padding: 13px 18px 13px 18px;
+    border: 1px solid #BB9E36;
+    background-color: #1fe0;
+
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.plus-mob__name {
+    @media (min-width: 744px) {
+            display: none;
+        }
+    font-family: 'Montserrat', sans-serif;
+    color: var(--accent-color);
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.active {
+    background-color: var(--accent-color);
+}
+
