@@ -15,7 +15,15 @@
 .price-list___kamyfluvan, 
 .price-list___stryzhky,
 .price-list___different {
-width: 412px;
+    @include for-desktop {
+        width: 412px;
+    }
+    @include for-tablet-only {
+        width: 446px;
+    }
+    @include for-mobile-only {
+        width: 358px;
+    }
 }
 .price-list__title {
     font-family: 'Montserrat', sans-serif;
@@ -25,25 +33,64 @@ width: 412px;
     font-weight: 500;
     font-size: 24px;
     letter-spacing: 0.05em;
-
     position: relative;
-    margin-top: 43px;
 
-    &::after {
-        position: absolute;
-        top: -33%;
-        left: 40%;
-        content: "";
-        display: inline-block;
-        width: 83px;
-        height: 3px;
-        background-color: var(--accent-color);
-        border-radius: 2px;
+    @media screen and (min-width: 744px) {
+            margin-top: 43px;
+        
+            &::after {
+                position: absolute;
+                top: -33%;
+                left: 40%;
+                content: "";
+                display: inline-block;
+                width: 83px;
+                height: 3px;
+                background-color: var(--accent-color);
+                border-radius: 2px;
+            }
+    }
+    @include for-mobile-only {
+            font-size: 20px;
+            line-height: 24px;
+            width: min-content;
+            margin: 0px auto 29px;
+            margin-top: 45px;
+
+            &::after {
+                    position: absolute;
+                    bottom: -33%;
+                    left: 0%;
+                    content: "";
+                    display: inline-block;
+                    width: 100%;
+                    height: 3px;
+                    color: var(--accent-color);
+                    border-bottom: dashed;
+                    // background-color: var(--accent-color);
+                    // border-bottom: 2px;
+                    // border-style:dashed;
+                }
+            &::before {
+                    position: absolute;
+                    top: -33%;
+                    left: 0%;
+                    content: "";
+                    display: inline-block;
+                    width: 100%;
+                    height: 3px;
+                    color: var(--accent-color);
+                    border-top: dashed;
+                    // background-color: var(--accent-color);
+                    // border-radius: 2px;
+                }
+            
     }
 }
 
 
 .price__container {
+    @include for-desktop {
     position: relative;
 
     background-repeat: no-repeat;
@@ -57,18 +104,34 @@ width: 412px;
     height: 890px;
     background-image: url(/src/images/price-fon.png);
     border: 2px solid var(--accent-color);
-
+    }
 }
 .price-list__item {
     font-family: 'Montserrat', sans-serif;
-    display: block;
+    // display: block;
     text-transform: uppercase;
     color: var(--text-color);
     font-weight: 500;
     font-size: 18px;
     letter-spacing: 0.05em;
     margin-top: 24px;
-    overflow: hidden;
+    
+    @include for-desktop {
+        font-size: 18px;
+        line-height: 22px;
+        overflow: hidden;
+    }
+    @include for-tablet-only {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    @include for-mobile-only {
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 26px;
+    }
 }
 
 // Крапки між назвою послуги і ціною
@@ -78,23 +141,53 @@ width: 412px;
     display: block;
     white-space: nowrap;
     overflow: hidden;
+
+    @include for-mobile-only {
+        display: none;
+    }
 }
+
 .service-name {
     float: left;
     margin-left: 2px;
+    // @include for-mobile-only {
+    //     font-size: 16px;
+    //     line-height: 20px;
+    //     margin-top: 26px;
+    //     margin-left: 0px;
+    // }
 }
 .service-price {
     float: right;
     margin-right: 2px;
+    // @include for-mobile-only {
+    //     font-size: 16px;
+    //     line-height: 20px;
+    //     margin-top: 26px;
+    //     margin-right: 0px;
+    // }
 }
 
 
 // Позиційовані елементи
 .price-background {
-    background-color: #706143;
-    height: 632px;
-    max-width: 1440px;
-    margin-top: -511px;
+
+    @include for-desktop {
+        background-color: #706143;
+        height: 632px;
+        max-width: 1440px;
+        margin-top: -511px;
+    }
+    @include for-tablet-only {
+        background-color: #404040;
+        height: 160px;
+    }
+    @include for-mobile-only {
+        background-color: #404040;
+        height: 140px;
+        // max-width: 1440px;
+        // margin-top: -511px;
+    }
 }
 .line--l {
     border-left: 1px solid var(--line-color);
@@ -105,6 +198,10 @@ width: 412px;
     top: 0;
     left: 0;
 
+    @include for-mobile-and-tablet {
+        display: none;
+    }
+
 }
 .line--r {
     border-right: 1px solid var(--line-color);
@@ -114,8 +211,18 @@ width: 412px;
     height: 815px;
     top: 0;
     right: 0;
+
+    @include for-mobile-and-tablet {
+        display: none;
+    }
 }
 .price-text {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-color);
+    font-weight: 400;
+    letter-spacing: 0.05em;
+
+    @include for-desktop {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -123,13 +230,31 @@ width: 412px;
     margin-right: 36px;
     margin-bottom: 27px;
 
-    font-family: 'Montserrat', sans-serif;
-    color: var(--text-color);
-    font-weight: 400;
     font-size: 21px;
-    letter-spacing: 0.05em;
+    line-height: 26px;
+    }
+    
+    @include for-tablet-only {
+        font-size: 22px;
+        line-height: 27px;
+
+        margin: 72px auto 46px;
+        text-align: center;
+        width: 648px;
+    }
+
+
+    @include for-mobile-only {
+        font-size: 16px;
+        line-height: 20px;
+
+        margin: 72px auto 28px;
+        text-align: center;
+        width: 358px;
+    }
+    
 }
-.logo-price {
+.logo-price__desktop {
     position: absolute;
     top: 0;
     left: 0;
@@ -138,4 +263,46 @@ width: 412px;
     height: 192px;
     width: 333px;
     fill: #3D3C3D;
+
+    @include for-mobile-and-tablet {
+        display: none;
+    }
+}
+
+.logo-price__tab-and-mob {
+    @include for-desktop {
+        display: none;
+    }
+    @include for-tablet-only {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 28px 0px;
+    }
+    @include for-mobile-only {
+        display: flex;
+        justify-content: center;
+        padding: 38px 0px;
+    }
+}
+
+.logo-price__first {
+    @include for-tablet-only {
+        width: 72px;
+        height: 72px;
+    }
+    @include for-mobile-only {
+        width: 57px;
+        height: 64px;
+    }
+}
+.logo-price__second {
+    @include for-tablet-only {
+        width: 274px;
+        height: 104px;
+    }
+    @include for-mobile-only {
+        width: 195px;
+        height: 60px;
+    }
 }

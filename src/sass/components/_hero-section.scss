@@ -3,7 +3,7 @@
     background-position: center;
     background-size: cover;
     margin: 0 auto;
-    padding-top: 45px;
+    padding-top: 125px;
 
     max-width: 1440px;
     height: 700px;
@@ -39,7 +39,36 @@
 }
 
 .main-logo {
-    width: 705px;
-    height: 375px;
-    margin: 0px auto 55px;
+    @include for-desktop {
+        width: 705px;
+        height: 375px;
+        margin: 0px 351px 55px 338px;
+    }
+
+    @include for-tablet-only {
+        width: 596px;
+        margin: 0px auto 32px;
+    }
+    @include for-mobile-only {
+        width: 358px;
+        height: 276px;
+        margin: 0px auto 20px;
+    }
+}
+
+.main-logo__svg {
+    @include for-desktop {
+        width: 650px;
+        height: 315px;
+    }
+
+    @include for-tablet-only {
+        width: 596px;
+        height: 305px;
+    }
+
+    @include for-mobile-only {
+        width: 358px;
+        height: 228px;
+    }
 }
