@@ -1,3 +1,4 @@
+
 .overlay {
     background-repeat: no-repeat;
     background-position: center;
@@ -70,5 +71,11 @@
     @include for-mobile-only {
         width: 358px;
         height: 228px;
+    }
+}
+
+.header-menu {
+    @include for-desktop {
+        display: none;
     }
 }

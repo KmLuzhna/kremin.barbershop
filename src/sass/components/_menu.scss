@@ -1,0 +1,49 @@
+.menu__button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    z-index: 3;
+
+}
+.menu-container.is-open {
+    transform: translateX(0);
+}
+.icon__close {
+    display: none;
+}
+
+.is-open .icon__close {
+    display: block;
+}
+
+.is-open .icon__menu {
+    display: none;
+}
+
+
+.menu-container {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 40px;
+
+    &.is-open {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: fixed;
+        height: 100%;
+        margin: 0 auto;
+
+    }
+}
+

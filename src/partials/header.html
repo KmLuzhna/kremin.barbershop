@@ -1,5 +1,6 @@
 <header class="header section">
     <div class="container header-container">
+        <div class="header-desktop">
         <div class="header-logo">
             <a class="header-logo__group" href="#">
                 <div>
@@ -26,7 +27,7 @@
                 <a class="auth-insta__link" href="https://www.instagram.com/">
                     <svg width="28px" height="28px">
                         <use href="/src/images/icons/symbol-defs-opt.svg#icon-instagram-header"></use>
-                    </svg>                 
+                    </svg>
                 </a>
             </div>
             <ul class="auth-list">
@@ -35,6 +36,61 @@
             </ul>
         </div>
         <p class="header-adress">м. Новояворівськ, вул. Степана Бандери 1A</p>
+        </div>
+
+        <div class="header-menu">
+            <a>м. Новояворівськ, вул. Степана Бандери 1A</a>
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="menu-icon" width="40px" height="40px">
+                    <use class="icon__menu" href="./images/icons/symbol-defs-work.svg#icon-menu-burger"></use>
+                </svg>
+            </button>
+        </div>
+
+        <div class="menu-container js-menu-container" id="mobile-menu" data-menu>
+            <button class="menu-toggle js-close-menu">
+                <svg class="menu-icon" width="40px" height="40px">
+                    <use class="icon__menu" href="./images/icons/symbol-defs-work.svg#icon-close"></use>
+                </svg>
+            </button>
+            <ul class="menu-info">
+                <li>
+                    <svg>
+                        <use href="./images/icons/symbol-defs-work.svg#icon-clock"></use>
+                    </svg>
+                    <p>Пн-Сб: 9:00-19:00</p>
+                </li>
+                <li>
+                    <svg>
+                        <use href="./images/icons/symbol-defs-work.svg#icon-phone-icon"></use>
+                    </svg>
+                    <p>380 97 138 00 88</p>
+                </li>
+            </ul>
+            <ul class="menu-nav">
+                <li class="menu-nav__item"><a class="menu-nav__link" href="#about">Про нас</a></li>
+                <li class="menu-nav__item"><a class="menu-nav__link" href="#barbers">Майстри</a></li>
+                <li class="menu-nav__item"><a class="menu-nav__link" href="#price">Послуги</a></li>
+                <li class="menu-nav__item"><a class="menu-nav__link" href="#contacts">Контакти</a></li>
+            </ul>
+            <button>
+                Записатися
+            </button>
+            <ul class="menu-svg">
+                <li>
+                    <svg class="menu-logo">
+                        <use href="./images/icons/symbol-defs-work.svg##icon-logotype-small"></use>
+                    </svg>
+                </li>
+                <li>
+                    <svg class="menu-insta">
+                        <use href="./images/icons/symbol-defs-work.svg#icon-instagram-footer"></use>
+                    </svg>
+                </li>
+            </ul>
+        </div>
+
     </div>
+
 
 </header>

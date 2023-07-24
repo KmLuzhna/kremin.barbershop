@@ -1,5 +1,20 @@
 
-.header-container {
+// .header-container {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     height: 73px;
+//     background-color: black;
+//     // padding: 0px 80px;
+//     position: fixed;
+//     z-index: 100;
+//     width: 1280px;
+
+//     @include for-mobile-and-tablet{
+//         display: none;
+//     }
+// }
+.header-desktop {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -10,11 +25,10 @@
     z-index: 100;
     width: 1280px;
 
-    @include for-mobile-and-tablet{
+    @include for-mobile-and-tablet {
         display: none;
     }
 }
-
 .header-adress {
     display: none;
 }
