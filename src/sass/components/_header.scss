@@ -1,13 +1,14 @@
-
 // .header-container {
 //     display: flex;
 //     align-items: center;
 //     justify-content: space-between;
 //     height: 73px;
-//     background-color: black;
+//     // background-color: #090909;
+//     background-color: wheat;
+    
 //     // padding: 0px 80px;
-//     position: fixed;
-//     z-index: 100;
+//     // position: fixed;
+//     // z-index: 100;
 //     width: 1280px;
 
 //     @include for-mobile-and-tablet{
@@ -18,17 +19,20 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 73px;
-    background-color: black;
-    // padding: 0px 80px;
+    height: 98px;
+    background-color: #0E0E0E;
+    padding: 0px 80px;
+    margin: 0px -80px;
     position: fixed;
     z-index: 100;
     width: 1280px;
+    
 
     @include for-mobile-and-tablet {
         display: none;
     }
 }
+
 .header-adress {
     display: none;
 }
@@ -83,7 +87,7 @@
     margin: 5px 0px 5px 12px;
     color: var(--text-color);
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 14px;
     line-height: auto;
     letter-spacing: 0.03em;
     &:hover,
@@ -114,7 +118,7 @@
 .auth-list{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
 }
 
  .auth-tel__link{
@@ -124,7 +128,7 @@
      text-transform: uppercase;
      font-weight: 700;
      font-size: 18px;
-     line-height: auto;
+     line-height: 25px;
      letter-spacing: 0.05em;
      text-decoration-line: none;
 
@@ -140,7 +144,47 @@
       color: var(--text-color);
       text-transform: uppercase;
       font-weight: 400;
-      font-size: 12px;
-      line-height: auto;
+      font-size: 14px;
+      line-height: 19px;
       letter-spacing: 0.05em;
   }
+
+//  Для планшету і моб.
+
+.header-menu {
+  @include for-desktop {
+    display: none;
+  }
+  @include for-mobile-and-tablet {
+    display: flex;
+        justify-content: space-between;
+        margin-bottom: -60px;
+  }
+}
+.js-open-menu {
+    width: 44px;
+    height: 44px;
+    padding: 4px;
+    background-color: #1fe0;
+    border: none;
+}
+
+.header-menu__adress {
+    font-family: 'PT Serif Caption', serif;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    text-align: left;
+
+    @include for-tablet-only {
+        font-size: 24px;
+        line-height: 32px;
+        width: 447px;
+        height: 56px;
+    }
+    @include for-mobile-only {
+        font-size: 14px;
+        line-height: 19px;
+        width: 248px;
+        height: 36px;
+    }
+}

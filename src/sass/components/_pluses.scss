@@ -1,6 +1,9 @@
 .pluses__section {
     padding-top: 130px;
     padding-bottom: 15px;
+    @include for-mobile-only{
+        padding-top: 66px;
+    }
 }
 
 .pluses__title {
@@ -19,6 +22,12 @@
         background-color: var(--line-color);
         border-radius: 2px;
     }
+
+    @include for-mobile-only {
+        font-size: 25px;
+        line-height: 33px;
+    }
+    margin-bottom: 15px;
 }
 
 .pluses-list{
@@ -118,15 +127,24 @@
 }
 
 .plus-img {
+    @include for-desktop {
+        border-radius: 107px;
+    }
     @include for-tablet-only {
             display: none;
         }
     @include for-mobile-only {
+        display: block;
+        margin: 0px auto;
         width: 358px;
             height: auto;
 
             // height: 196px;
     }
+}
+
+.not-active {
+    display: none;
 }
 .plus-img__anoth {
     @media (min-width: 1440px) {

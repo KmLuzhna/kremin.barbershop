@@ -4,10 +4,11 @@
     background-position: center;
     background-size: cover;
     margin: 0 auto;
-    padding-top: 125px;
+    padding-top: 180px;
+    padding-bottom: 180px;
 
     max-width: 1440px;
-    height: 700px;
+    height: auto;
     background-image:url(/src/images/main-section-bkgr.png);
 
 }
@@ -16,7 +17,7 @@
     font-family: 'PT Serif Caption', serif;
     display: block;
     padding: 20px 40px;
-    margin: 0px auto 150px auto;
+    margin: 0px auto 0px auto;
     width: max-content;
 
     color: var(--text-color);
@@ -43,7 +44,7 @@
     @include for-desktop {
         width: 705px;
         height: 375px;
-        margin: 0px 351px 55px 338px;
+        margin: 0px 351px 0px 338px;
     }
 
     @include for-tablet-only {
