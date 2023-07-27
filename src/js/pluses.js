@@ -1,5 +1,6 @@
 // const plesesButton = document.querySelector(".plus-btn");
 const plusName = document.querySelector(".plus-info__name");
+const plusNameMob = document.querySelector(".plus-mob__name");
 const plusInfo = document.querySelector(".plus-info__text");
 const plusImage = document.querySelector(".plus-img__conteiner");
 const professionalismBtn = document.querySelector(".professionalism-btn");
@@ -33,7 +34,8 @@ function changePlus(newPlus) {
  
 
 function activeProfessionalis() {
-        plusName.innerHTML = 'Професійність';
+    plusName.innerHTML = 'Професійність';
+    plusNameMob.innerHTML = 'Професійність';
         plusInfo.innerHTML = 'Відповідальні майстри від 7 років досвіду, які знаються на сучасних трендах, постійно вдосконалюються та можуть довести твій образ до ідеалу';
 
     professionalismImg.classList.remove('not-active');
@@ -50,8 +52,9 @@ function activeProfessionalis() {
 }
 
 function activeQuality() {
-        plusName.innerHTML = 'Якість';
-        plusInfo.innerHTML = 'Інвестували в найкраще обладнання та кращі продукти для догляду за волоссям та шкірою. Працюємо за принципом- якість в кожній деталі';
+    plusName.innerHTML = 'Якість';
+    plusNameMob.innerHTML = 'Якість';
+    plusInfo.innerHTML = 'Інвестували в найкраще обладнання та кращі продукти для догляду за волоссям та шкірою. Працюємо за принципом- якість в кожній деталі';
     
     qualityImg.classList.remove('not-active');
     professionalismImg.classList.add('not-active');
@@ -68,6 +71,7 @@ function activeQuality() {
 
 function activeModernity() {  
     plusName.innerHTML = 'Сучасність';
+    plusNameMob.innerHTML = 'Сучасність';
     plusInfo.innerHTML = 'Використовуємо тільки сучасні інструменти та чоловічу косметику, а в нашому Барбершопі крута чоловіча атмосфера з сучасним інтер’єром'; 
         
     modernityImg.classList.remove('not-active');
@@ -84,7 +88,8 @@ function activeModernity() {
 }
 
 function activeBonuses() {
-        plusName.innerHTML = 'Бонуси';
+    plusName.innerHTML = 'Бонуси';
+    plusNameMob.innerHTML = 'Бонуси';
         plusInfo.innerHTML = 'Безкоштовні напої клієнтам, та програми лояльності'; 
      
     bonusesImg.classList.remove('not-active');

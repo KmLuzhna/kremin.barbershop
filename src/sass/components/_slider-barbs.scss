@@ -337,3 +337,17 @@
       background: rgba(0, 0, 0, 0);
   }
 
+
+.element-list {
+    @include for-desktop {
+        display: none;
+    }
+    display: flex;
+    justify-content: center;
+}
+.element {
+    fill: #686868;
+}
+  .current {
+      fill:#AD9445;
+  }
