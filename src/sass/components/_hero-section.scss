@@ -21,7 +21,8 @@
     width: max-content;
 
     color: var(--text-color);
-    background-color:var(--button-color);
+    background: rgba(0, 0, 0, 0);
+    border: 2px solid #FFFFFF;
 
     text-transform: uppercase;
     font-weight: 400;

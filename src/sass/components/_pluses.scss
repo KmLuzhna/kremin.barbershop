@@ -2,8 +2,38 @@
     font-family: 'Montserrat', sans-serif;
     padding-top: 130px;
     padding-bottom: 15px;
+    @include for-desktop {
+        position: relative;
+        overflow: hidden;
+    }
     @include for-mobile-only{
         padding-top: 66px;
+    }
+}
+.elem-pluses {
+    @include for-desktop {
+        width: 350px;
+        height: 364px;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 1070px;
+        height: 798px;
+        top: -150px;
+        right: -240px;
+    }
+
+    @include for-mobile-and-tablet {
+        display: none;
+    }
+}
+
+.elem-pluses__svg {
+    @include for-desktop {
+          width: 1070.4999679311143px; 
+        height: 798px;
+        fill: var(--element-color);
     }
 }
 
@@ -51,8 +81,9 @@
     font-size: 17px;
     letter-spacing: 0.03em;
     text-align: center;
-    background-color: #11ffee00;
-    border: 2px solid var(--button-color);
+    color: var(--white-color);
+    background: rgba(0, 0, 0, 0);
+    border: 2px solid var(--white-color);
     cursor: pointer;
 
     @include for-desktop {
@@ -60,6 +91,7 @@
         font-weight: 600;
         line-height: 21px;
         text-transform: uppercase;
+        min-width: 200px;
     }
     @include for-tablet-only{
         font-size: 21px;
@@ -71,7 +103,7 @@
 
     &:hover,
     &:focus {
-        background-color: #A18753;
+        background-color: #292929;
     }
 
 }
@@ -157,6 +189,8 @@
 .plus-img {
     @include for-desktop {
         border-radius: 107px;
+        position: relative;
+        z-index: 10;
     }
     @include for-tablet-only {
         display: block;
@@ -316,6 +350,8 @@
 }
 
 .active {
-    background-color: var(--accent-color);
+    background-color: #292929;
 }
+
+
 

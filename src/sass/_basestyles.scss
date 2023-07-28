@@ -10,6 +10,8 @@ body {
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
+
+    // overflow: hidden;
     // padding-left: 15px;
     // padding-right: 15px;
     
@@ -17,6 +19,7 @@ body {
 
 .container {
     padding: 0 80px;
+
     
     @include for-tablet-only {
         min-width: 680px;

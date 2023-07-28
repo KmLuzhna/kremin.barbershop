@@ -1,6 +1,9 @@
 .aboutus__section {
     padding-top: 60px;
     padding-bottom: 65px;
+    @include for-desktop {
+        position: relative;
+    }
     @include for-mobile-only{
         padding-bottom: 0px;
     }
@@ -15,7 +18,34 @@
         align-items: center;
         }
 }
+  .elem-about {
+      @include for-desktop {
+          width: 350px;
+          height: 364px;
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 0;
+      }
+
+      @include for-mobile-and-tablet {
+          display: none;
+      }
+  }
+
+  .elem-about__svg {
+      @include for-desktop {
+          width: 398px;
+          height: 474px;
+          fill: var(--element-color);
+      }
+  }
 .aboutus__img {
+    @include for-desktop {
+        position: relative;
+        z-index: 5;
+    }
     @include for-tablet-only {
         width: 446px;
         height: 380px;
@@ -77,3 +107,5 @@
     
         }
 }
+
+

@@ -1,7 +1,9 @@
 // ЗАГОЛОВОК І ТЕКСТ
 .barbes__section {
+    
     padding-bottom: 20px;
     @include for-desktop {
+        position: relative;
         padding-top: 185px;
     }
     @include for-tablet-only{
@@ -350,4 +352,49 @@
 }
   .current {
       fill:#AD9445;
+  }
+
+
+
+
+  .elem-barb {
+    @include for-desktop {
+        width: 350px;
+        height: 364px;
+        display: block;
+        position: absolute;
+        top: -150px;
+        left: -15px;
+    }
+    @include for-mobile-and-tablet {
+        display: none;
+    }
+  }
+  .elem-barb__svg {
+    @include for-desktop {
+        width: 350px;
+        height: 364px;
+        fill: var(--element-color);
+    }
+  }
+
+
+  .stars-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    @include for-tablet-only{
+        margin-bottom: 18px;
+    }
+    @include for-mobile-only{
+        margin-bottom: 14px;
+    }
+  }
+  .stars-list__item {
+    width: 28px;
+    height: 28px;
+
+    &:not(:last-child){
+        margin-right: 16px;
+    }
   }
