@@ -20,7 +20,7 @@
 
     @include for-desktop {
         width: 535px;
-        margin: 0px auto 24px;
+        margin: 0px auto 32px;
     }
     @include for-tablet-only {
         width: 535px;
@@ -31,19 +31,22 @@
         line-height: 33px;
 
         width: 320px;
-        margin: 0px auto 40px;
+        margin: 0px auto 45px;
     }
 
     &::after {
         position: absolute;
-        top: -30%;
+        bottom: -30%;
         left: 30%;
         content: "";
         display: inline-block;
         width: 210px;
         height: 3px;
-        background-color: var(--line-color);
+        background-color: var(--white-color);
         border-radius: 2px;
+        @include for-mobile-only {
+            height: 2px;
+        }
 
         @include for-mobile-only {
             width: 150px;
@@ -136,7 +139,7 @@
 
 
 
-// КАРТКА БАБАРА
+// КАРТКА БАБАРА І СЛАЙДЕР
 .barbes-container {
     @include for-mobile-and-tablet {
         position: relative;
@@ -150,6 +153,7 @@
                 overflow: hidden;
                 margin: 20px auto;
                 overflow: hidden;
+                position: relative;
         }
     @include for-mobile-only {
             width: 359px;
@@ -238,9 +242,12 @@
         font-size: 21px;
         letter-spacing: 0.05em;
         text-align: center;
-        background-color: #11ffee00;
-        border: 2px solid var(--accent-color);
+        // background-color: #11ffee00;
+        // border: 2px solid var(--accent-color);
         text-decoration: none;
+         color: var(--text-color);
+        background: rgba(0, 0, 0, 0);
+        border: 2px solid #FFFFFF;
     
         position: absolute;
         bottom: 1%;
@@ -261,45 +268,60 @@
     @include for-mobile-and-tablet{
         position: absolute;
         color: var(--text-color);
-        background: var(--button-color); 
+        background: var(--background-btn); 
         border-radius: 12px;
     }
     @include for-tablet-only{
-        // width: 56px;
-        // height: 56px;
-        font-size: 32px;
+        width: 56px;
+        height: 56px;
     }
     @include for-mobile-only{
-        // width: 56px;
-        // height: 56px;
-        font-size: 20px;
+        width: 44px;
+        height: 44px;
     }
-    padding: 6px 12px;
+    padding: 0px 10px;
     border: none;
     cursor: pointer;
 }
 
 .slider-prev {
-    @include for-tablet-only{
-        top: 290px;
-        left: 32px;
-    }
+    // @include for-tablet-only{
+    //     top: 290px;
+    //     left: 32px;
+    // }
+    // @include for-mobile-and-tablet {
+    //     top: 295px;
+    //     left: 16px;
+    // }
     @include for-mobile-and-tablet {
-        top: 295px;
-        left: 16px;
+        top: 0px;
+        left: 0px;       
     }
 }
 .slider-next {
-    @include for-tablet-only {
-        top: 290px;
-        right: 32px;
-        }
-    @include for-mobile-only {
-        top: 295px;
-        right: 16px;
+    // @include for-tablet-only {
+    //     top: 290px;
+    //     right: 32px;
+    //     }
+    // @include for-mobile-only {
+    //     top: 295px;
+    //     right: 16px;
+    // }
+    @include for-mobile-and-tablet {
+        top: 0px;
+        right: 0px;       
     }
 }
-
+.slider-btn {
+    @include for-tablet-only {
+        width: 36px;
+        height: 36px;
+    }
+    @include for-mobile-only {
+        width: 24px;
+        height: 24px;
+    }
+}
 
 //АКТИВНА КАРТКА
   .barb-action {
@@ -318,10 +340,11 @@
   }
 
   .barb__card:hover .barb__btn {
-      color: var(--text-color);
-      background: var(--button-color);
-      border: 2px solid var(--accent-color);
-      cursor: pointer;
+    color: var(--text-color);
+    border: 2px solid var(--white-color);
+    cursor: pointer;
+    background: linear-gradient(0deg, #292929, #292929),
+            linear-gradient(0deg, #FFFFFF, #FFFFFF);
   }
 
   .barb__card:hover .barb-action {
@@ -340,9 +363,17 @@
   }
 
 
+
+// Elipse
 .element-list {
     @include for-desktop {
         display: none;
+    }
+    @include for-tablet-only{
+        margin-top: -20px;
+    }
+    @include for-mobile-only{
+        margin-bottom: 50px;
     }
     display: flex;
     justify-content: center;
@@ -354,9 +385,7 @@
       fill:#AD9445;
   }
 
-
-
-
+// Background element
   .elem-barb {
     @include for-desktop {
         width: 350px;
@@ -378,16 +407,13 @@
     }
   }
 
-
+// Stars
   .stars-list {
     display: flex;
     justify-content: center;
     margin-top: 10px;
     @include for-tablet-only{
         margin-bottom: 18px;
-    }
-    @include for-mobile-only{
-        margin-bottom: 14px;
     }
   }
   .stars-list__item {

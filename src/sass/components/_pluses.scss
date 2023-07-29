@@ -63,6 +63,10 @@
 .pluses-list{
     display: flex;
     justify-content: flex-start;
+    @include for-desktop {
+        position: relative;
+        z-index: 15;
+    }
     @media (max-width: 743px) {
         display: none;
         }
@@ -134,7 +138,7 @@
     margin: 48px 0px;
     // font-family: 'Montserrat', sans-serif;
     display: block;
-    color: var(--accent-color);
+    color: var(--text-color);
     text-transform: uppercase;
     font-weight: 500;
     font-size: 32px;

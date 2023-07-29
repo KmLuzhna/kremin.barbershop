@@ -3,11 +3,15 @@
         padding-top: 160px;
         background-color: var(--background-color);
     }
+    @include for-tablet-only {
+        padding-top: 50px;
+    }
+    
     
     // padding-bottom: 120px;
     @include for-mobile-only{
         padding-top: 40px;
-        background-color: #121212;
+        // background-color: #121212; стара версія
     }
 }
 
@@ -59,7 +63,7 @@
                 content: "";
                 display: inline-block;
                 width: 83px;
-                height: 3px;
+                height: 2px;
                 background-color: #BB9E36;
                 border-radius: 2px;
             }
@@ -116,7 +120,7 @@
 
     max-width: 1278px;
     height: 890px;
-    background-image: url(/src/images/price-fon.png);
+    background-image: url(/src/images/price/photo-fon.jpg);
     border: 2px solid var(--text-color);
     }
 }
@@ -187,10 +191,11 @@
 .price-background {
 
     @include for-desktop {
-        background-color: #515151;
+        // background-color: #515151;
         height: 632px;
         max-width: 1440px;
         margin-top: -511px;
+        background-image: url(/src/images/price/gradient.jpg);
     }
     @include for-tablet-only {
         background-color: #404040;
