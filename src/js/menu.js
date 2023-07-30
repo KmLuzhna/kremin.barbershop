@@ -2,6 +2,7 @@
   const mobileMenu = document.querySelector('.js-menu-container');
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
+  // const navItem = document.querySelector('.menu-nav__item');
 
   const toggleMenu = () => {
     const isMenuOpen =
@@ -25,7 +26,14 @@
     openMenuBtn.setAttribute('aria-expanded', false);
     bodyScrollLock.enableBodyScroll(document.body);
   });
+
+  // navItem.addEventListener('click', closeMenu)
+
 })();
+const mobileMenu = document.querySelector('.js-menu-container');
+ function closeMenu() {
+    mobileMenu.classList.remove('is-open');
+  }
 
 
 

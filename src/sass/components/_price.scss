@@ -203,14 +203,16 @@
         background-image: url(/src/images/price/gradient.jpg);
     }
     @include for-tablet-only {
-        background-color: #404040;
+        // background-color: #404040;
         height: 160px;
     }
     @include for-mobile-only {
-        background-color: #404040;
+        // background-color: #404040;
         height: 140px;
-        // max-width: 1440px;
-        // margin-top: -511px;
+    }
+    @include for-mobile-and-tablet {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                linear-gradient(0deg, #292929, #292929);
     }
 }
 .line--l {
@@ -308,6 +310,7 @@
         justify-content: center;
         padding: 38px 0px;
     }
+    fill: var(--text-color);
 }
 
 .logo-price__first {

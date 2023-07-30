@@ -61,7 +61,8 @@
      text-decoration-line: none;
 
      &:hover,
-     &:focus {
+     &:focus,
+     &:active {
          color: var(--accent-color);
      }
  }
@@ -76,7 +77,8 @@
     text-decoration: none;
     fill: #EBE8E8;
     &:hover,
-    &:focus {
+    &:focus,
+    &:active {
         fill: var(--accent-color);}
    
 }
@@ -91,7 +93,8 @@
     line-height: auto;
     letter-spacing: 0.03em;
     &:hover,
-    &:focus {
+    &:focus,
+    &:active {
          color: var(--accent-color);}
     
 }
@@ -107,10 +110,10 @@
 }
 
 .auth-insta__link {
-    
-   
+    fill: var(--text-color);
     &:hover,
-    &:focus {
+    &:focus,
+    &:active {
         fill: var(--accent-color);
     }
 }
@@ -133,7 +136,8 @@
      text-decoration-line: none;
 
      &:hover,
-     &:focus {
+     &:focus,
+    &:active {
          color: var(--accent-color);
      }
  }
@@ -158,6 +162,7 @@
   @include for-mobile-and-tablet {
     display: flex;
         justify-content: space-between;
+        align-items: center;
         margin-bottom: -60px;
         
   }
@@ -191,6 +196,7 @@
     }
 }
 .open-menu__svg {
+    stroke: var(--white-color);
     @include for-tablet-only {
         width: 112px;
         height: 72px;
@@ -203,6 +209,11 @@
         margin-top: -11px;
         margin-left: -16px;
     }
+    &:hover,
+    &:focus,
+    &:active {
+        stroke: var(--accent-color);
+     }
 }
 
 .header-menu__adress {
@@ -210,6 +221,8 @@
     font-weight: 400;
     letter-spacing: 0.05em;
     text-align: left;
+    color: var(--text-color);
+    text-decoration-line: none;
 
     @include for-tablet-only {
         font-size: 24px;
@@ -223,4 +236,9 @@
         width: 248px;
         height: 36px;
     }
+    &:hover,
+    &:focus,
+    &:active {
+        color: var(--accent-color);
+     }
 }

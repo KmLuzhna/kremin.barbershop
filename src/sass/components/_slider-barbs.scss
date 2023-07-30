@@ -313,6 +313,7 @@
     }
 }
 .slider-btn {
+    stroke: var(--white-color);
     @include for-tablet-only {
         width: 36px;
         height: 36px;
@@ -321,6 +322,11 @@
         width: 24px;
         height: 24px;
     }
+    &:hover,
+    &:focus,
+    &:active {
+        stroke: var(--accent-color);
+     }
 }
 
 //АКТИВНА КАРТКА

@@ -181,8 +181,10 @@ margin-bottom: 50px;
     font-style: normal;
 
     @include for-desktop {
-        font-size: 16px;
-        line-height: 21px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 25px;
+        letter-spacing: 0em;
         }
 
     @include for-tablet-only {
@@ -274,7 +276,8 @@ margin-bottom: 50px;
 .footer-insta__link {
     fill: var(--text-color);
     &:hover,
-    &:focus {
+    &:focus,
+    &:active {
         fill: var(--accent-color);
     }
 }
@@ -286,6 +289,7 @@ margin-bottom: 50px;
 
 
 .footer-logo__svg {
+    fill:var(--text-color);
    @include for-desktop{
     width: 357px;
         height: 100px;
@@ -295,6 +299,11 @@ margin-bottom: 50px;
     width: 260px;
         height: 64px;
    }
+    &:hover,
+    &:focus,
+    &:active {
+        fill: var(--accent-color);
+    }
 }
 .footer-icon {
     display: flex;
