@@ -151,6 +151,11 @@
         margin-top: 26px;
     }
 }
+.price-list__item--text-start {
+    @include for-mobile-and-tablet {
+        text-align: start;
+    }
+}
 
 // Крапки між назвою послуги і ціною
 .price-list__item:after {

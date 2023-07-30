@@ -44,20 +44,26 @@
 
     &::after {
         position: absolute;
-        top: -30%;
+        bottom: -30%;
         left: 23%;
         content: "";
         display: inline-block;
         width: 210px;
-        height: 3px;
-        background-color: var(--line-color);
+        height: 2px;
+        background-color: var(--white-color);
         border-radius: 2px;
+    }
+    @include for-desktop {
+        margin-bottom: 80px;
+    }
+    @include for-tablet-only {
+        margin-bottom: 40px;
     }
     @include for-mobile-only {
         font-size: 25px;
         line-height: 33px;
+        margin-bottom: 45px;
     }
-    margin-bottom: 15px;
 }
 
 .pluses-list{
@@ -95,7 +101,7 @@
         font-weight: 600;
         line-height: 21px;
         text-transform: uppercase;
-        min-width: 200px;
+        // min-width: 200px;
     }
     @include for-tablet-only{
         font-size: 21px;
@@ -173,12 +179,13 @@
     font-weight: 400;
     font-size: 22px;
     letter-spacing: 0.03em;
-    text-align: left;
-    line-height: 140%;
+    line-height: 27px;
+
+    @include for-desktop {
+        width: 628px;
+    }
 
     @include for-tablet-only {
-        font-size: 22px;
-        line-height: 27px;
         width: 592px;
         margin: 30px auto 0px;
         }
@@ -186,7 +193,8 @@
         font-size: 18px;
         line-height: 22px;
         text-align: center;
-        margin: 20px 0px;
+        width: 358px;
+        margin: 20px auto;
     }
 }
 
@@ -195,6 +203,8 @@
         border-radius: 107px;
         position: relative;
         z-index: 10;
+        width: 587px;
+        height: 394px;
     }
     @include for-tablet-only {
         display: block;
@@ -301,8 +311,11 @@
     width: 44px;
     height: 44px;
     padding: 13px 18px 13px 18px;
-    border: 1px solid #BB9E36;
-    background-color: #1fe0;
+    // border: 1px solid #BB9E36;
+    // background-color: #1fe0;
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid var(--white-color);
+    cursor: pointer;
 
     // font-family: 'Montserrat', sans-serif;
     color: var(--text-color);
@@ -318,7 +331,7 @@
             display: none;
         }
     // font-family: 'Montserrat', sans-serif;
-    color: var(--accent-color);
+    color: var(--text-color);
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 0.03em;

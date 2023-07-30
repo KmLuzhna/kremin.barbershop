@@ -6,6 +6,13 @@
     height: 988px;
     background-image: url(/src/images/contacts-bkgr.jpg);
     background-size: cover;
+    @include for-tablet-only{
+        height: 763px;
+       background-image: url(/src/images/contact-bkgr-tablet.jpg); 
+    }
+    @include for-mobile-only{
+        height: 672px;
+    }
 }
 
 .contact__container {

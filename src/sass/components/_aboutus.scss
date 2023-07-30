@@ -4,6 +4,9 @@
     @include for-desktop {
         position: relative;
     }
+    @include for-tablet-only{
+        padding-bottom: 0px;
+    }
     @include for-mobile-only{
         padding-bottom: 0px;
     }
@@ -70,10 +73,12 @@
     text-align: left;
     margin-left: 72px;
 
-    @include for-mobile-and-tablet {
-            min-width: 680px;
+    @include for-mobile-and-tablet{
             text-align: center;
             margin-left: 0px;
+    }
+    @include for-tablet-only {
+            width: 680px;
         }
     @include for-mobile-only {
             font-size: 22px;

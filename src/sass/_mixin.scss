@@ -13,8 +13,13 @@
         @content;
     }
 }
+// @mixin for-mobile-and-tablet {
+//     @media screen and (min-width: 390px) and (max-width: 1439px) {
+//         @content;
+//     }
+// }
 @mixin for-mobile-and-tablet {
-    @media screen and (min-width: 390px) and (max-width: 1439px) {
+    @media screen and (max-width: 1439px) {
         @content;
     }
 }

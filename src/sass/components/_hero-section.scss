@@ -4,12 +4,25 @@
     background-position: center;
     background-size: cover;
     margin: 0 auto;
-    padding-top: 180px;
-    padding-bottom: 180px;
 
     max-width: 1440px;
     height: auto;
-    background-image:url(/src/images/main-section-bkgr.png);
+    
+    @include for-desktop{
+        background-image: url(/src/images/hero-section-desktop.jpg);
+        padding-top: 180px;
+        padding-bottom: 180px;
+    }
+    @include for-tablet-only {
+        background-image: url(/src/images/hero-section-tab.jpg);
+        padding-top: 329px;
+        padding-bottom: 382px;
+    }
+    @include for-mobile-only {
+        background-image: url(/src/images/hero-section-mob.jpg);
+        padding-top: 213px;
+        padding-bottom: 382px;
+    }
 
 }
 

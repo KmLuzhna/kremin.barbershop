@@ -4,11 +4,18 @@ const plusNameMob = document.querySelector(".plus-mob__name");
 const plusInfo = document.querySelector(".plus-info__text");
 const plusImage = document.querySelector(".plus-img__conteiner");
 const professionalismBtn = document.querySelector(".professionalism-btn");
+
 const professionalismBtnMob = document.querySelector(".professionalism-mob-btn");
 const qualityBtn = document.querySelector(".quality-btn");
 const modernityBtn = document.querySelector(".modernity-btn");
 const bonusesBtn = document.querySelector(".bonuses-btn");
 const mobBtnList = document.querySelector(".mob-btn-list");
+
+const professionalismBtnMobBottom = document.querySelector(".professionalism-mob-btn--bottom");
+const qualityBtnBottom  = document.querySelector(".quality-btn--bottom");
+const modernityBtnBottom  = document.querySelector(".modernity-btn--bottom");
+const bonusesBtnBottom  = document.querySelector(".bonuses-btn--bottom");
+const mobBtnListBottom  = document.querySelector(".mob-btn-list--bottom");
 
 const professionalismImg = document.querySelector(".professionalism-img");
 const qualityImg = document.querySelector(".quality-img");
@@ -44,10 +51,16 @@ function activeProfessionalis() {
     bonusesImg.classList.add('not-active');
 
     professionalismBtn.classList.add('active');
-        professionalismBtnMob.classList.add('active');
-        qualityBtn.classList.remove('active');
-        modernityBtn.classList.remove('active');
-        bonusesBtn.classList.remove('active');
+    professionalismBtnMob.classList.add('active');
+    qualityBtn.classList.remove('active');
+    modernityBtn.classList.remove('active');
+    bonusesBtn.classList.remove('active');
+    
+        professionalismBtnMobBottom.classList.add('active');
+        qualityBtnBottom.classList.remove('active');
+        modernityBtnBottom.classList.remove('active');
+        bonusesBtnBottom.classList.remove('active');
+        
         
 }
 
@@ -66,6 +79,11 @@ function activeQuality() {
         professionalismBtnMob.classList.remove('active');
         modernityBtn.classList.remove('active');
         bonusesBtn.classList.remove('active');
+    
+        qualityBtnBottom.classList.add('active');
+        professionalismBtnMobBottom.classList.remove('active');
+        modernityBtnBottom.classList.remove('active');
+        bonusesBtnBottom.classList.remove('active');
         
 }
 
@@ -84,13 +102,18 @@ function activeModernity() {
     professionalismBtnMob.classList.remove('active');
     bonusesBtn.classList.remove('active');
     qualityBtn.classList.remove('active');
+
+    modernityBtnBottom.classList.add('active');
+    professionalismBtnMobBottom.classList.remove('active');
+    bonusesBtnBottom.classList.remove('active');
+    qualityBtnBottom.classList.remove('active');
         
 }
 
 function activeBonuses() {
     plusName.innerHTML = 'Бонуси';
     plusNameMob.innerHTML = 'Бонуси';
-        plusInfo.innerHTML = 'Безкоштовні напої клієнтам, та програми лояльності'; 
+    plusInfo.innerHTML = 'Безкоштовні напої клієнтам, та програми лояльності'; 
      
     bonusesImg.classList.remove('not-active');
     professionalismImg.classList.add('not-active');
@@ -98,10 +121,15 @@ function activeBonuses() {
     qualityImg.classList.add('not-active');
     
     bonusesBtn.classList.add('active');
-        professionalismBtn.classList.remove('active');
-        professionalismBtnMob.classList.remove('active');
-        modernityBtn.classList.remove('active');
-        qualityBtn.classList.remove('active');
+    professionalismBtn.classList.remove('active');
+    professionalismBtnMob.classList.remove('active');
+    modernityBtn.classList.remove('active');
+    qualityBtn.classList.remove('active');
+    
+    bonusesBtnBottom.classList.add('active');
+    professionalismBtnMobBottom.classList.remove('active');
+    modernityBtnBottom.classList.remove('active');
+    qualityBtnBottom.classList.remove('active');
 }
 
 // WORK
