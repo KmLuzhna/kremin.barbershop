@@ -10,6 +10,11 @@
         padding-top: 66px;
     }
 }
+.pluses-container{
+    @include for-small-mobile {
+        min-width: 288px;
+    }
+}
 .elem-pluses {
     @include for-desktop {
         width: 350px;
@@ -52,6 +57,10 @@
         height: 2px;
         background-color: var(--white-color);
         border-radius: 2px;
+        
+        @include for-small-mobile {
+            left: 15%;
+        }
     }
     @include for-desktop {
         margin-bottom: 80px;
@@ -63,6 +72,9 @@
         font-size: 25px;
         line-height: 33px;
         margin-bottom: 45px;
+    }
+    @include for-small-mobile {
+        width: 288px;
     }
 }
 
@@ -196,6 +208,9 @@
         width: 358px;
         margin: 20px auto;
     }
+    @include for-small-mobile {
+        width: 288px;
+    }
 }
 
 .plus-img {
@@ -217,8 +232,9 @@
         margin: 0px auto;
         width: 358px;
             height: auto;
-
-            // height: 196px;
+    }
+    @include for-small-mobile {
+        width: 288px;
     }
 }
 

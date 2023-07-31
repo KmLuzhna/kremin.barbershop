@@ -29,6 +29,9 @@ body {
         min-width: 358px;
         padding: 0 16px;
     }
+    @include for-small-mobile {
+        min-width: 288px;
+    }
 
 }
 

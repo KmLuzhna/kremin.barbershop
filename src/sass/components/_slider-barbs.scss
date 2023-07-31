@@ -33,6 +33,10 @@
         width: 320px;
         margin: 0px auto 45px;
     }
+    @include for-small-mobile {
+        font-size: 22px;
+        width: 288px;
+    }
 
     &::after {
         position: absolute;
@@ -83,6 +87,9 @@
         line-height: 22px;
         width: 358px;
         margin: 0px auto 43px;
+    }
+    @include for-small-mobile {
+        width: 288px;
     }
 }
 
@@ -144,6 +151,9 @@
     @include for-mobile-and-tablet {
         position: relative;
     }
+    @include for-small-mobile {
+        min-width: 288px;
+    }
 }
 .slider {
     
@@ -162,6 +172,10 @@
                 margin: 20px auto;
                 overflow: hidden;
         }
+
+    @include for-small-mobile {
+        width: 288px;
+    }
 }
 
 .slider-line {
@@ -204,6 +218,9 @@
         height: auto;
         align-items: center;
         text-align: center;
+    }
+    @include for-small-mobile {
+        width: 288px;
     }
     
 }

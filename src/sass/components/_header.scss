@@ -27,10 +27,17 @@
     z-index: 100;
     width: 1280px;
     
-
-    @include for-mobile-and-tablet {
+    @media screen and (min-width: 1024px) and (max-width: 1439px) {
+        width: 100%;
+        padding: 0px;
+        margin: 0px -32px;
+        }
+    // @include for-mobile-and-tablet {
+    //     display: none;
+    // }
+     @media (max-width: 1023px) {
         display: none;
-    }
+        }
 }
 
 .header-adress {
@@ -47,6 +54,9 @@
     // margin: 0px 65px 0px 70px;
     &__item:not(:last-child) {
         margin-right: 40px;
+        @media screen and (min-width: 1024px) and (max-width: 1439px) {
+            margin-right: 20px;
+        }
         }
 }
  .site-nav__link {
@@ -59,6 +69,10 @@
      font-size: 22px;
      letter-spacing: 0.03em;
      text-decoration-line: none;
+     
+        @media screen and (min-width: 1024px) and (max-width: 1439px) {
+            font-size: 20px;
+        }
 
      &:hover,
      &:focus,
@@ -76,11 +90,19 @@
     display: flex;
     text-decoration: none;
     fill: #EBE8E8;
+
+    @media screen and (min-width: 1024px) and (max-width: 1439px) {
+            margin-left: 32px;
+        }
     &:hover,
     &:focus,
     &:active {
         fill: var(--accent-color);}
-   
+}
+.header-logo__svg{
+    @media screen and (min-width: 1024px) and (max-width: 1439px) {
+            width: 170px;
+        }
 }
 
 .header-logo__text {
@@ -122,6 +144,9 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+        @media screen and (min-width: 1024px) and (max-width: 1439px) {
+            margin-right: 32px;
+        }
 }
 
  .auth-tel__link{
@@ -156,22 +181,32 @@
 //  Для планшету і моб.
 
 .header-menu {
-  @include for-desktop {
-    display: none;
-  }
-  @include for-mobile-and-tablet {
-    display: flex;
+//   @include for-desktop {
+//     display: none;
+//   }
+   @media (min-width: 1023px) {
+       display: none;
+   }
+   @media (max-width: 1023px) {
+        display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: -60px;
-        
-  }
+        margin-bottom: -60px;  
+   }
+//   @include for-mobile-and-tablet {
+//     display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+//         margin-bottom: -60px;      
+//   }
   @include for-tablet-only {
     margin-top: 35px;
   }
     @include for-mobile-only {
-  margin-top: 45px;
-        
+  margin-top: 45px;     
+  }
+  @include for-small-mobile {
+    justify-content: end;
   }
 }
 .js-open-menu {
@@ -240,5 +275,8 @@
     &:focus,
     &:active {
         color: var(--accent-color);
+     }
+     @include for-small-mobile {
+        display: none;
      }
 }

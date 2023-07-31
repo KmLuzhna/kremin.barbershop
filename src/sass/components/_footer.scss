@@ -44,10 +44,11 @@
         left: 0;
     }
 }
-// .footer-container{
-//     position: relative;
-//     padding-bottom: 40px;
-// }
+.footer-container{
+    @include for-small-mobile {
+        min-width: 288px;
+    }
+}
 
 .footer__flex {
     display: flex;
@@ -86,6 +87,9 @@
         border: 0;
         width: 357px;
         height: 328px;
+    }
+    @include for-small-mobile {
+        width: 288px;
     }
 }
 .footer-location__title {
@@ -134,7 +138,7 @@ margin-bottom: 50px;
         color: var(--accent-color);
     }
 }
-.address-list__link--adress{
+.address-list__link--flex{
     display: flex;
 }
 // ADRESS-LIST------------------------

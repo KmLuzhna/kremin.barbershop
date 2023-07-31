@@ -44,7 +44,6 @@
     letter-spacing: 0.05em;
     text-decoration-line: none;
     
-    
     &:hover,
     &:focus,
     &:active {
@@ -54,6 +53,9 @@
             cursor: pointer;
             background: linear-gradient(0deg, #292929, #292929),
                 linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    }
+    @include for-small-mobile {
+        font-size: 22px;
     }
 }
 
@@ -89,6 +91,9 @@
     @include for-mobile-only {
         width: 358px;
         height: 228px;
+    }
+    @include for-small-mobile {
+        width: 288px;
     }
 }
 

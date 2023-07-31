@@ -11,6 +11,11 @@
         padding-bottom: 0px;
     }
 }
+.about-container{
+    @include for-small-mobile {
+            min-width: 288px;
+        }
+}
 .aboutus__container {
     display: flex;
     justify-content: space-between;
@@ -85,6 +90,10 @@
             line-height:  21.6px;
             min-width: 358px;
         }
+    @include for-small-mobile {
+        font-size: 20px;
+        min-width: 288px;
+    }
 }
 
 .aboutus__title {
