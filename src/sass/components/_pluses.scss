@@ -9,10 +9,17 @@
     @include for-mobile-only{
         padding-top: 66px;
     }
+    @include for-tablet-only {
+            min-height: 725px;
+    }
 }
 .pluses-container{
     @include for-small-mobile {
         min-width: 288px;
+        min-height: 568px;
+    }
+    @include for-mobile-only {
+        min-height: 568px;
     }
 }
 .elem-pluses {
@@ -241,70 +248,6 @@
 .not-active {
     display: none;
 }
-// .plus-img__anoth {
-//     @media (min-width: 1440px) {
-//             display: none;
-//         }
-//     @include for-tablet-only {
-//     width: 330px;
-//     // height: 265px;
-//     height: auto;
-//         }
-//     @include for-mobile-only {
-//     // width: 358px;
-//     // height: auto;
-//         // height: 196px; 
-//     }
-// }
-
-
-// Tablet
-// .tablet-pluses {
-//     @media (min-width: 1440px)  {
-//          display: none;
-//         }
-//     @media (max-width: 743px)  {
-//          display: none;
-//         }
-// }
-// .tablet-pluses__item {
-//     @include for-tablet-only {
-//         display: flex;
-//         &:not(:last-child) {
-//                 margin-bottom: 55px;
-//             }
-//         }
-// }
-// .tablet-pluses__name {
-//         font-family: Montserrat;
-//         font-size: 21px;
-//         font-weight: 700;
-//         line-height: 26px;
-//         letter-spacing: 0.03em;
-//         text-align: center;
-//         color: var(--accent-color);
-//         margin-bottom: 16px;
-//         text-transform: uppercase;
-// }
-// .tablet-pluses__text{
-//     @include for-tablet-only {
-//     font-family: Montserrat;
-//     font-size: 21px;
-//     font-weight: 400;
-//     line-height: 29px;
-//     letter-spacing: 0.03em;
-//     text-align: center;
-//         }
-// }
-
-// .tablet-pluses__info:nth-child(2n) {
-// margin-left: 20px;
-// }
-
-// .tablet-pluses__info:nth-child(2n+1) {
-//     margin-right: 20px;
-// }
-
 
 // КНОПКИ ДЛЯ МОБІЛЬНОЇ ВЕРСІЇ
 
@@ -326,7 +269,7 @@
 .mob-btn {
     width: 44px;
     height: 44px;
-    padding: 13px 18px 13px 18px;
+    // padding: 13px 18px 13px 18px;
     // border: 1px solid #BB9E36;
     // background-color: #1fe0;
     background: rgba(0, 0, 0, 0);

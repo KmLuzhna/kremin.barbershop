@@ -86,12 +86,12 @@
             width: 680px;
         }
     @include for-mobile-only {
-            font-size: 22px;
-            line-height:  21.6px;
+            font-size: 18px;
+            line-height: 22px;
             min-width: 358px;
         }
     @include for-small-mobile {
-        font-size: 20px;
+        font-size: 18px;
         min-width: 288px;
     }
 }

@@ -124,7 +124,7 @@
 
 .barbe__expr {
     font-family: 'PT Serif Caption', serif;
-    color: var(--text-color);
+    color: var(--accent-color);
     text-transform: uppercase;
     font-weight: 400;
     font-size: 22px;
@@ -302,28 +302,12 @@
 }
 
 .slider-prev {
-    // @include for-tablet-only{
-    //     top: 290px;
-    //     left: 32px;
-    // }
-    // @include for-mobile-and-tablet {
-    //     top: 295px;
-    //     left: 16px;
-    // }
     @include for-mobile-and-tablet {
         top: 0px;
         left: 0px;       
     }
 }
 .slider-next {
-    // @include for-tablet-only {
-    //     top: 290px;
-    //     right: 32px;
-    //     }
-    // @include for-mobile-only {
-    //     top: 295px;
-    //     right: 16px;
-    // }
     @include for-mobile-and-tablet {
         top: 0px;
         right: 0px;       
