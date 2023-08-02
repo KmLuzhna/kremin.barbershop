@@ -36,6 +36,8 @@
         width: 288px;
     }
 }
+
+
 .price-list___kamyfluvan, 
 .price-list___stryzhky,
 .price-list___different {
@@ -299,20 +301,20 @@
     }
     
 }
-.logo-price__desktop {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-top: 25px;
-    margin-left: 56px;
-    height: 192px;
-    width: 333px;
-    fill: #3D3C3D;
+// .logo-price__desktop {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     margin-top: 25px;
+//     margin-left: 56px;
+//     height: 192px;
+//     width: 333px;
+//     fill: #3D3C3D;
 
-    @include for-mobile-and-tablet {
-        display: none;
-    }
-}
+//     @include for-mobile-and-tablet {
+//         display: none;
+//     }
+// }
 
 .logo-price__tab-and-mob {
     @include for-desktop {
@@ -351,4 +353,77 @@
         width: 195px;
         height: 60px;
     }
+}
+
+
+
+.btn-category {
+    display: flex;
+
+    @include for-desktop {
+        position: absolute;
+        flex-direction: column;
+        align-items: flex-start;
+            top: 335px;
+            left: 20px;
+    }
+
+    @include for-tablet-only {
+    justify-content: space-between;
+        width: 446px;
+        margin: 25px auto 0px;
+    }
+    @include for-mobile-only{
+    justify-content: space-between;
+        width: 358px;
+        margin: 25px auto 0px;
+    }
+    @include for-small-mobile {
+        width: 288px;
+    }
+}
+.grand-btn,
+.master-btn{
+    font-family: PT Serif Caption;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+
+    text-transform: uppercase;
+    background: transparent;
+    border: none;
+
+    @include for-desktop {
+            font-size: 28px;
+            line-height: 37px;
+            color: var(--text-color);
+    }
+    @include for-tablet-only{
+            font-size: 24px;
+            line-height: 32px;
+            color: var(--white-color);
+    }
+    @include for-mobile-only {
+            font-size: 19px;
+            line-height: 25px;
+            color: var(--white-color);
+    }
+    @include for-small-mobile {
+        font-size: 17px;
+    }
+}
+
+.active-price {
+    color: #BD9E34;
+    @include for-mobile-and-tablet {
+        border: 1px solid #FFFFFF;
+        padding: 10px;
+    }
+}
+.grand-btn {
+    @include for-desktop {
+        margin-bottom: 25px;
+    }
+}
+.not-shown {
+    display: none;
 }

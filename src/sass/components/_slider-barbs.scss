@@ -234,15 +234,15 @@
     border-radius: 20%;
     @include for-desktop {
         width: 410px;
-        height: auto;
+        height: 427px;
     }
     @include for-tablet-only {
         width: 446px;
-        height: auto;
+        height: 466px;
     }
     @include for-mobile-only {
         width: 282px;
-        height: auto;
+        height: 300px;
     }
 }
 
@@ -377,7 +377,7 @@
         display: none;
     }
     @include for-tablet-only{
-        margin-top: -20px;
+        margin-top: 20px;
     }
     @include for-mobile-only{
         margin-bottom: 50px;
@@ -419,8 +419,9 @@
     display: flex;
     justify-content: center;
     margin-top: 10px;
+    margin-bottom: 10px;
     @include for-tablet-only{
-        margin-bottom: 18px;
+        // margin-bottom: 18px;
     }
   }
   .stars-list__item {

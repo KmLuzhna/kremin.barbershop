@@ -2,43 +2,105 @@
     <div class="price__container">
         
         <h2 class="title price-title" id="price">Послуги та ціни</h2>
-        <div class="price-list">
-            <div class="price-list___kamyfluvan">
-                <h3 class="price-list__title">Камуфлювання</h3>
-                <ul class="price-list__list">
-                    <li class="price-list__item"> <span class="service-name">Камуфлювання сивини</span> <span class="service-price" >350 грн</span> </li>
-                    <li class="price-list__item"> <span class="service-name">Камуфлювання бороди</span> <span class="service-price">300 грн</span> </li>
-                </ul>
+        <div class="btn-category">
+            <button type="button" class="grand-btn active-price" onclick="changePrice('grand');"> grand barber </button>
+            <button type="button" class="master-btn" onclick="changePrice('master');"> master</button>
+        </div>
+        <div class="price-category">
+            <div class="price-list grand barber">
+                <div class="price-list___kamyfluvan">
+                    <h3 class="price-list__title">Камуфлювання</h3>
+                    <ul class="price-list__list">
+                        <li class="price-list__item"> <span class="service-name">Камуфлювання сивини</span> <span
+                                class="service-price">350 грн</span> </li>
+                        <li class="price-list__item"> <span class="service-name">Камуфлювання бороди</span> <span
+                                class="service-price">300 грн</span> </li>
+                    </ul>
+                </div>
+                <div class="price-list___stryzhky">
+                    <h3 class="price-list__title">Стрижки</h3>
+                    <ul class="price-list__list">
+                        <li class="price-list__item"> <span class="service-name">Чоловіча стрижка</span> <span
+                                class="service-price">400 грн</span> </li>
+                        <li class="price-list__item"> <span class="service-name">Подовжена стрижка</span> <span
+                                class="service-price">450 грн</span> </li>
+                        <li class="price-list__item"> <span class="service-name">Дитяча стрижка</span> <span
+                                class="service-price">350 грн</span> </li>
+                        <li class="price-list__item"> <span class="service-name">Стрижка бороди</span> <span
+                                class="service-price">350 грн</span> </li>
+                        <li class="price-list__item"> <span class="service-name">Стрижка під насадку</span> <span
+                                class="service-price">300 грн</span> </li>
+                        <li class="price-list__item"> <span class="service-name">Окантовка стрижки</span> <span
+                                class="service-price">150 грн</span> </li>
+                        <li class="price-list__item"> <span class="service-name">Стрижка + борода</span> <span
+                                class="service-price">700 грн</span> </li>
+                        <li class="price-list__item price-list__item--text-start"> <span class="service-name">Стрижка під насадку +
+                                <br> борода</span><br><span class="service-price">600 грн</span> </li>
+                    </ul>
+                </div>
+                <div class="price-list___different">
+                    <h3 class="price-list__title">Інше</h3>
+                    <ul class="price-list__list">
+                        <li class="price-list__item"> <span class="service-name">Королівське гоління</span> <span
+                                class="service-price">500 грн</span> </li>
+                        <li class="price-list__item"> <span class="service-name">Укладка</span> <span class="service-price">150
+                                грн</span> </li>
+                        <li class="price-list__item"> <span class="service-name">Депіляція</span> <span class="service-price">150
+                                грн</span> </li>
+                    </ul>
+                </div>
             </div>
-            <div class="price-list___stryzhky">
-                <h3 class="price-list__title">Стрижки</h3>
-                <ul class="price-list__list">
-                    <li class="price-list__item"> <span class="service-name">Чоловіча стрижка</span> <span class="service-price">400 грн</span> </li>
-                    <li class="price-list__item"> <span class="service-name">Подовжена стрижка</span> <span class="service-price">450 грн</span> </li>
-                    <li class="price-list__item"> <span class="service-name">Дитяча стрижка</span> <span class="service-price">350 грн</span> </li>
-                    <li class="price-list__item"> <span class="service-name">Стрижка бороди</span> <span class="service-price">350 грн</span> </li>
-                    <li class="price-list__item"> <span class="service-name">Стрижка під насадку</span> <span class="service-price">300 грн</span> </li>
-                    <li class="price-list__item"> <span class="service-name">Окантовка стрижки</span> <span class="service-price">150 грн</span> </li>
-                    <li class="price-list__item"> <span class="service-name">Стрижка + борода</span> <span class="service-price">700 грн</span> </li>
-                    <li class="price-list__item price-list__item--text-start"> <span class="service-name">Стрижка під насадку + <br> борода</span><br><span class="service-price">600 грн</span> </li>
-                </ul>
-            </div>
-            <div class="price-list___different">
-                <h3 class="price-list__title">Інше</h3>
-                <ul class="price-list__list">
-                    <li class="price-list__item"> <span class="service-name">Королівське гоління</span> <span class="service-price">500 грн</span> </li>
-                    <li class="price-list__item"> <span class="service-name">Укладка</span> <span class="service-price">150 грн</span> </li>
-                    <li class="price-list__item"> <span class="service-name">Депіляція</span> <span class="service-price">150 грн</span> </li>
-                </ul>
+            <div class="price-list master not-shown">
+                <div class="price-list___kamyfluvan">
+                    <h3 class="price-list__title">Камуфлювання</h3>
+                    <ul class="price-list__list">
+                        <li class="price-list__item"> <span class="service-name">Камуфлювання сивини</span> <span
+                                class="service-price">350 грн</span> </li>
+                        <li class="price-list__item"> <span class="service-name">Камуфлювання бороди</span> <span
+                                class="service-price">300 грн</span> </li>
+                    </ul>
+                </div>
+                <div class="price-list___stryzhky">
+                    <h3 class="price-list__title">Стрижки</h3>
+                    <ul class="price-list__list">
+                        <li class="price-list__item"> <span class="service-name">Чоловіча стрижка</span> <span
+                                class="service-price">250 грн</span> </li>
+                        <li class="price-list__item"> <span class="service-name">Подовжена стрижка</span> <span
+                                class="service-price">300 грн</span> </li>
+                        <li class="price-list__item"> <span class="service-name">Дитяча стрижка</span> <span
+                                class="service-price">200 грн</span> </li>
+                        <li class="price-list__item"> <span class="service-name">Стрижка бороди</span> <span
+                                class="service-price">200 грн</span> </li>
+                        <li class="price-list__item"> <span class="service-name">Стрижка під насадку</span> <span
+                                class="service-price">200 грн</span> </li>
+                        <li class="price-list__item"> <span class="service-name">Окантовка стрижки</span> <span
+                                class="service-price">150 грн</span> </li>
+                        <li class="price-list__item"> <span class="service-name">Стрижка + борода</span> <span
+                                class="service-price">450 грн</span> </li>
+                        <li class="price-list__item price-list__item--text-start"> <span class="service-name">Стрижка під насадку +
+                                <br> борода</span><br><span class="service-price">550 грн</span> </li>
+                    </ul>
+                </div>
+                <div class="price-list___different">
+                    <h3 class="price-list__title">Інше</h3>
+                    <ul class="price-list__list">
+                        <li class="price-list__item"> <span class="service-name">Королівське гоління</span> <span
+                                class="service-price">400 грн</span> </li>
+                        <li class="price-list__item"> <span class="service-name">Укладка</span> <span class="service-price">150
+                                грн</span> </li>
+                        <li class="price-list__item"> <span class="service-name">Депіляція</span> <span class="service-price">150
+                                грн</span> </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="line--l"></div>
         <div class="line--r"></div>
-        <div class="logo-price__desktop">
+        <!-- <div class="logo-price__desktop">
             <svg>
                 <use href="/src/images/icons/icons.svg#icon-logotype"></use>
             </svg>
-        </div>
+        </div> -->
         <div class="price-text">Ароматна кава та інші напої клієнтам безкоштовно*</div>
     </div>
     <div class="price-background">
