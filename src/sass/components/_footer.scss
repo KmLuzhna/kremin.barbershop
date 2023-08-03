@@ -135,7 +135,7 @@ margin-bottom: 50px;
 
     &:hover,
     &:focus {
-        color: var(--accent-color);
+        color: var(--hover-color);
     }
 }
 .address-list__link--flex{
@@ -203,7 +203,7 @@ margin-bottom: 50px;
 
     &:hover,
     &:focus {
-        color: var(--accent-color);
+        color: var(--hover-color);
     }
 }
 
@@ -265,7 +265,7 @@ margin-bottom: 50px;
     fill: var(--text-color);
     &:hover,
     &:focus {
-        fill: var(--accent-color);
+        fill: var(--hover-color);
     }
 }
 
@@ -282,7 +282,7 @@ margin-bottom: 50px;
     &:hover,
     &:focus,
     &:active {
-        fill: var(--accent-color);
+        fill: var(--hover-color);
     }
 }
 .icon-footer {
@@ -306,7 +306,7 @@ margin-bottom: 50px;
     &:hover,
     &:focus,
     &:active {
-        fill: var(--accent-color);
+        fill: var(--hover-color);
     }
 }
 .footer-icon {

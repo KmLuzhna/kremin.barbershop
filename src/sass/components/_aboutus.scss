@@ -81,6 +81,7 @@
     @include for-mobile-and-tablet{
             text-align: center;
             margin-left: 0px;
+            color: var(--white-color);
     }
     @include for-tablet-only {
             width: 680px;
@@ -93,6 +94,7 @@
     @include for-small-mobile {
         font-size: 18px;
         min-width: 288px;
+        color: var(--white-color);
     }
 }
 
