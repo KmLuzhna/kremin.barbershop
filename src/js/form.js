@@ -50,3 +50,26 @@ const submitForm = (event) => {
 
 onForm.addEventListener('input', changedOnForm);
 onForm.addEventListener("submit", submitForm);
+
+
+document.getElementById("myForm").addEventListener("submit", function(event) {
+  event.preventDefault(); // Забороняємо формі відправлятись автоматично
+
+  var formData = new FormData(this); // Отримуємо дані з форми
+  var chatId = "6444843684"; // Замініть на ваш chatId, отриманий від Телеграму
+
+  // Відправляємо POST-запит на API Телеграму
+  fetch(`https://api.telegram.org/botKreminBarber_bot/sendMessage?chat_id=${chatId}`, {
+    method: "POST",
+    body: formData
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log(data); // Результат відправки повідомлення в Телеграм
+    // Додайте код для обробки успішної відправки повідомлення
+  })
+  .catch(error => {
+    console.error(error); // Помилка відправки повідомлення в Телеграм
+    // Додайте код для обробки помилки відправки повідомлення
+  });
+});
