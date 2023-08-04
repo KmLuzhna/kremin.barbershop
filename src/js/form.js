@@ -59,7 +59,7 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
   var chatId = "5187801485"; // Замініть на ваш chatId, отриманий від Телеграму
 
   // Відправляємо POST-запит на API Телеграму
-  fetch(`https://api.telegram.org/bot6444843684:AAHgazEpVJzBoNaJE6XRUbWy78z-U5jn3yE/sendMessage?chat_id=${chatId}`, {
+  fetch(`https://api.telegram.org/bot6444843684:AAHgazEpVJzBoNaJE6XRUbWy78z-U5jn3yE/sendMessage?chat_id=5187801485&text=Всім привіт!`, {
     method: "POST",
     body: formData
   })
