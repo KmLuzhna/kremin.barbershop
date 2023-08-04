@@ -56,10 +56,10 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
   event.preventDefault(); // Забороняємо формі відправлятись автоматично
 
   var formData = new FormData(this); // Отримуємо дані з форми
-  var chatId = "6444843684"; // Замініть на ваш chatId, отриманий від Телеграму
+  var chatId = "5187801485"; // Замініть на ваш chatId, отриманий від Телеграму
 
   // Відправляємо POST-запит на API Телеграму
-  fetch(`https://api.telegram.org/botKreminBarber_bot/sendMessage?chat_id=${chatId}`, {
+  fetch(`https://api.telegram.org/bot6444843684:AAHgazEpVJzBoNaJE6XRUbWy78z-U5jn3yE/sendMessage?chat_id=${chatId}`, {
     method: "POST",
     body: formData
   })
