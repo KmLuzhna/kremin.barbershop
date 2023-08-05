@@ -26,7 +26,7 @@ const bonusesImg = document.querySelector(".bonuses-img");
 let photo = document.createElement("img");
 photo.src = "./quality.92b2337c.png";
 photo.alt = "quality";
-console.log(photo)
+// console.log(photo)
 function changePlus(newPlus) {
     if (newPlus === "professionalism") {
         activeProfessionalis();

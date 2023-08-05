@@ -58,6 +58,8 @@
 // -----------------------------------
 
 
+
+
 document.getElementById("myForm").addEventListener("submit", function(event) {
   event.preventDefault(); // Забороняємо формі відправлятись автоматично
 
@@ -94,5 +96,19 @@ const options = {
     fetch(`https://api.telegram.org/bot6444843684:AAHgazEpVJzBoNaJE6XRUbWy78z-U5jn3yE/sendMessage?chat_id=-760695570`, options)
   .then(response => response.json())
   .then(response => console.log(response))
-  .catch(err => console.error(err));
+        .catch(err => console.error(err));
+    
+    
+event.currentTarget.reset();
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Отримуємо елемент цільової секції
+  var targetSection = document.querySelector('.target-section');
+  
+  // Перевіряємо, чи існує цільова секція
+  if (targetSection) {
+    // Прокручуємо до верхньої частини цільової секції
+    targetSection.scrollIntoView();
+  }
 });

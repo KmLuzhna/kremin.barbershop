@@ -94,7 +94,7 @@ let countGal = 0;
 let widthGal;
 
 function init() {
-    console.log('resize');
+    // console.log('resize');
     widthGal = document.querySelector('.gallery').offsetWidth;
     console.log(widthGal);
     // sliderLineGal.style.width = widthGal * images.length + 'px';

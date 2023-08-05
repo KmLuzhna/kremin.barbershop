@@ -202,12 +202,6 @@
     @include for-small-mobile {
         text-align: end;
     }
-    // @include for-mobile-only {
-    //     font-size: 16px;
-    //     line-height: 20px;
-    //     margin-top: 26px;
-    //     margin-right: 0px;
-    // }
 }
 
 
@@ -219,7 +213,7 @@
         height: 632px;
         max-width: 1440px;
         margin-top: -511px;
-        background-image: url(/src/images/price/gradient.jpg);
+        background-image: url(/src/images/price/gradient.png);
     }
     @include for-tablet-only {
         // background-color: #404040;

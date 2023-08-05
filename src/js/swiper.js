@@ -6,7 +6,7 @@ let count = 0;
 let width;
 
 function init() {
-    console.log('resize');
+    // console.log('resize');
     width = document.querySelector('.slider').offsetWidth;
     sliderLine.style.width = width * imagesPlus.length + 'px';
     imagesPlus.forEach(item => {
