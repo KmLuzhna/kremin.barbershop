@@ -2,7 +2,7 @@
     <div class="contact__container">
         <h2 class="title form-title" id="contacts">Зв’язатися з нами</h2>
         <div class="form__container">
-            <form class="form">
+            <!-- <form class="form">
                 <label class="form__label">
                     <input class="form__input"  type="text" name="username" autofocus required placeholder="Ваше ім'я"
                         pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$" />
@@ -14,7 +14,7 @@
                     <textarea class="form__text"  name="message" rows="8" placeholder="Ваше повідомлення"></textarea>
                 </label>
                 <button class="form__button" type="submit">Надіслати</button>
-            </form>
+            </form> -->
             <div class="location">
                 <h3 class="location__text">Ми знаходимося тут</h3>
                 <!-- <a href="https://goo.gl/maps/uJ2V6R9G3yVL6myr5" target="_blank" rel="noreferrer noopen"></a> -->
@@ -25,6 +25,27 @@
                 </iframe>
             </div>
 
+
+            <form action="telegram.php" method="POST">
+                <legend>Заголовок формы</legend>
+            
+                <div class="form-group">
+                    <label for="">Введите ваше имя</label>
+                    <input type="text" class="form-control" id="" name="user_name" placeholder="Например, Иван">
+                </div>
+            
+                <div class="form-group">
+                    <label for="">Введите номер телефона</label>
+                    <input type="text" class="form-control" id="" name="user_phone" placeholder="+7 (999) 99 99 999">
+                </div>
+            
+                <div class="form-group">
+                    <label for="">Введите email</label>
+                    <input type="text" class="form-control" id="" name="user_email" placeholder="mail@mail.ru">
+                </div>
+            
+                <button type="submit" class="btn btn-primary">Отправить форму</button>
+            </form>
         </div>
 
     </div>
