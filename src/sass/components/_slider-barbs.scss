@@ -137,11 +137,11 @@
     }
     @include for-tablet-only {
         // font-size: 28px;
-        font-size: 16px;
+        font-size: 20px;
         line-height: 37px;
     }
     @include for-mobile-only {
-        font-size: 16px;
+        font-size: 18px;
         line-height: 27px;
     }
 }
@@ -385,6 +385,9 @@
     }
     @include for-mobile-only{
         margin-bottom: 50px;
+        // margin-top: -20px;
+    }
+     @include for-small-mobile{
         margin-top: -20px;
     }
     display: flex;

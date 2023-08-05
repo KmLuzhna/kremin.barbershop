@@ -69,8 +69,8 @@
                 linear-gradient(0deg, #FFFFFF, #FFFFFF);
     }
     @include for-small-mobile {
-        font-size: 22px;
-        padding: 16px 30px;
+        font-size: 18px;
+        padding: 10px 20px;
     }
 }
 
@@ -90,23 +90,49 @@
         height: 276px;
         margin: 0px auto 20px;
     }
+   @include for-small-mobile {
+       width: 288px;
+       height: 256px;
+   }
 }
 
-.main-logo__svg {
+
+.main-logo--tab {
     @include for-desktop {
         width: 650px;
         height: 315px;
     }
 
     @include for-tablet-only {
+        // display: none;
         width: 596px;
         height: 305px;
+    }
+
+    @include for-mobile-only {
+        display: none;
+        width: 358px;
+        height: 228px;
+    }
+    @include for-small-mobile {
+        width: 288px;
+    }
+}
+.main-logo--mob {
+    fill: #FFFFFF;
+    @include for-desktop {
+        display: none;
+    }
+
+    @include for-tablet-only {
+        display: none;
     }
 
     @include for-mobile-only {
         width: 358px;
         height: 228px;
     }
+
     @include for-small-mobile {
         width: 288px;
     }

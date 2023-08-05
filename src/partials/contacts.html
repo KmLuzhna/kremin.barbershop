@@ -2,9 +2,9 @@
     <div class="contact__container">
         <h2 class="title form-title" id="contacts">Зв’язатися з нами</h2>
         <div class="form__container">
-            <form class="form">
+            <form class="form" id="myForm">
                 <label class="form__label">
-                    <input class="form__input"  type="text" name="username" autofocus required placeholder="Ваше ім'я"
+                    <input class="form__input"  type="text" name="name" autofocus required placeholder="Ваше ім'я"
                         pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$" />
                 </label>
                 <label class="form__label">
@@ -24,7 +24,12 @@
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
-
+            <!-- <form id="myForm">
+                <input type="text" name="name" placeholder="Ваше ім'я">
+                <input type="email" name="email" placeholder="Ваша електронна пошта">
+                <textarea name="message" placeholder="Ваше повідомлення"></textarea>
+                <button type="submit">Відправити</button>
+            </form> -->
         </div>
 
     </div>

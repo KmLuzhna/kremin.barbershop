@@ -222,6 +222,7 @@
 }
 
 .plus-img {
+    object-fit: cover;
     @include for-desktop {
         border-radius: 107px;
         position: relative;
@@ -239,7 +240,7 @@
         display: block;
         margin: 0px auto;
         width: 358px;
-            height: auto;
+            height: 192px;
     }
     @include for-small-mobile {
         width: 288px;
