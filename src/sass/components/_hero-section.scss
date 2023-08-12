@@ -13,6 +13,11 @@
         padding-top: 180px;
         padding-bottom: 180px;
     }
+    @include for-laptop-only {
+        background-image: url(/src/images/hero-section-desktop.jpg);
+        padding-top: 180px;
+        padding-bottom: 180px;
+    }
     @include for-tablet-only {
         background-image: url(/src/images/hero-section-tab.jpg);
         padding-top: 329px;
@@ -75,10 +80,13 @@
 }
 
 .main-logo {
-    @include for-desktop {
+    @include for-laptop-and-desktop {
         width: 705px;
         height: 375px;
         margin: 0px 351px 0px 338px;
+    }
+    @include for-laptop-only{
+        margin: 0 235px 0 235px;
     }
 
     @include for-tablet-only {
@@ -98,7 +106,7 @@
 
 
 .main-logo--tab {
-    @include for-desktop {
+    @include for-laptop-and-desktop {
         width: 650px;
         height: 315px;
     }
@@ -120,7 +128,7 @@
 }
 .main-logo--mob {
     fill: #FFFFFF;
-    @include for-desktop {
+    @include for-laptop-and-desktop {
         display: none;
     }
 

@@ -2,7 +2,7 @@
     font-family: 'Montserrat', sans-serif;
     padding-top: 130px;
     padding-bottom: 15px;
-    @include for-desktop {
+    @include for-laptop-and-desktop {
         position: relative;
         overflow: hidden;
     }
@@ -23,7 +23,7 @@
     }
 }
 .elem-pluses {
-    @include for-desktop {
+    @include for-laptop-and-desktop {
         width: 350px;
         height: 364px;
         display: block;
@@ -32,7 +32,7 @@
         right: 0;
         width: 1070px;
         height: 798px;
-        top: -150px;
+        top: -100px;
         right: -240px;
     }
 
@@ -42,7 +42,7 @@
 }
 
 .elem-pluses__svg {
-    @include for-desktop {
+    @include for-laptop-and-desktop {
           width: 1070.4999679311143px; 
         height: 798px;
         fill: var(--element-color);
@@ -205,6 +205,13 @@
         color: var(--text-color);
     }
 
+    @include for-laptop-only {
+        font-size: 20px;
+        line-height: 24px;
+        width: 548px;
+        color: var(--text-color);
+    }
+
     @include for-tablet-only {
         width: 592px;
         margin: 30px auto 0px;
@@ -223,12 +230,17 @@
 
 .plus-img {
     object-fit: cover;
-    @include for-desktop {
+    @include for-laptop-and-desktop {
         border-radius: 107px;
         position: relative;
         z-index: 10;
-        width: 587px;
         height: 394px;
+    }
+    @include for-desktop {
+        width: 587px;
+    }
+    @include for-laptop-only {
+        width: 548px;
     }
     @include for-tablet-only {
         display: block;
@@ -288,7 +300,7 @@
 }
 
 .plus-mob__name {
-    @media (min-width: 1440px) {
+    @media (min-width: 1280px) {
             display: none;
         }
     // font-family: 'Montserrat', sans-serif;

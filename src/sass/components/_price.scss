@@ -1,5 +1,5 @@
 .price__section {
-    @include for-desktop {
+    @include for-laptop-and-desktop {
         padding-top: 160px;
         background-color: var(--background-color);
     }
@@ -41,7 +41,7 @@
 .price-list___kamyfluvan, 
 .price-list___stryzhky,
 .price-list___different {
-    @include for-desktop {
+    @include for-laptop-and-desktop {
         width: 412px;
     }
     @include for-tablet-only {
@@ -119,7 +119,7 @@
 
 
 .price__container {
-    @include for-desktop {
+    @include for-laptop-and-desktop {
     position: relative;
 
     background-repeat: no-repeat;
@@ -129,10 +129,17 @@
     padding-top: 57px;
     padding-bottom: 115px;
 
-    max-width: 1278px;
+    
     height: 890px;
     background-image: url(/src/images/price/photo-fon.jpg);
     border: 2px solid var(--text-color);
+    }
+
+    @include for-desktop{
+        max-width: 1278px;
+    }
+    @include for-laptop-only{
+        max-width: 1118px;
     }
 }
 .price-list__item {
@@ -145,7 +152,7 @@
     letter-spacing: 0.05em;
     margin-top: 24px;
     
-    @include for-desktop {
+    @include for-laptop-and-desktop {
         font-size: 18px;
         line-height: 22px;
         overflow: hidden;
@@ -208,7 +215,7 @@
 // Позиційовані елементи
 .price-background {
 
-    @include for-desktop {
+    @include for-laptop-and-desktop {
         // background-color: #515151;
         height: 632px;
         max-width: 1440px;
@@ -237,6 +244,9 @@
     top: 0;
     left: 0;
 
+    @include for-laptop-only{
+        margin: 155px 0px 94px 328px;
+    }
     @include for-mobile-and-tablet {
         display: none;
     }
@@ -251,6 +261,9 @@
     top: 0;
     right: 0;
 
+    @include for-laptop-only{
+        margin: 155px 328px 94px 0px;;
+    }
     @include for-mobile-and-tablet {
         display: none;
     }
@@ -261,7 +274,7 @@
     font-weight: 400;
     letter-spacing: 0.05em;
 
-    @include for-desktop {
+    @include for-laptop-and-desktop {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -312,7 +325,7 @@
 // }
 
 .logo-price__tab-and-mob {
-    @include for-desktop {
+    @include for-laptop-and-desktop {
         display: none;
     }
     @include for-tablet-only {
@@ -355,7 +368,7 @@
 .btn-category {
     display: flex;
 
-    @include for-desktop {
+    @include for-laptop-and-desktop {
         position: absolute;
         flex-direction: column;
         align-items: flex-start;
@@ -387,7 +400,7 @@
     background: transparent;
     border: none;
 
-    @include for-desktop {
+    @include for-laptop-and-desktop {
             font-size: 28px;
             line-height: 37px;
             color: var(--text-color);
@@ -415,7 +428,7 @@
     }
 }
 .grand-btn {
-    @include for-desktop {
+    @include for-laptop-and-desktop {
         margin-bottom: 25px;
     }
 }

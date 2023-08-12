@@ -20,7 +20,10 @@ body {
 .container {
     padding: 0 80px;
 
-    
+    @include for-laptop-only {
+        min-width: 1120px;
+        padding: 0 80px;
+    }
     @include for-tablet-only {
         min-width: 680px;
         padding: 0 32px;

@@ -1,7 +1,7 @@
 .page-footer {
     background-color: #0E0E0E;
     position: relative;
-    @include for-desktop{
+    @include for-laptop-and-desktop{
         padding-top: 45px;
         padding-bottom: 75px;
     }
@@ -16,7 +16,7 @@
 }
 
 .footer-line__top {
-   @include for-desktop {
+   @include for-laptop-and-desktop {
     border-top: 2px solid var(--white-color);
         width: 100%;
         position: absolute;
@@ -31,7 +31,7 @@
     border-top: 2px solid var(--white-color);
     width: 100%;
     position: absolute;
-    @include for-desktop{
+    @include for-laptop-and-desktop{
         bottom: 160px;
         left: 0;
     }
@@ -56,7 +56,7 @@
     align-items: center;
     
     // align-items: center;
-    @include for-desktop{
+    @include for-laptop-and-desktop{
             padding: 40px 0px;
     }
     @include for-mobile-and-tablet {
@@ -65,7 +65,7 @@
 }
 // LOCATION-------------------------
 .footer-location{
-    @include for-desktop {
+    @include for-laptop-and-desktop {
             display: none;
         }
     @include for-mobile-and-tablet {
@@ -133,6 +133,8 @@ margin-bottom: 50px;
     text-decoration-line: none;
     padding: 16px 0;
 
+    @include animation(color);
+
     &:hover,
     &:focus {
         color: var(--hover-color);
@@ -157,7 +159,7 @@ margin-bottom: 50px;
     flex-direction: column;
     
     
-    @include for-desktop {
+    @include for-laptop-and-desktop {
     &__item:not(:last-child) {
             margin-bottom: 54px;
         }
@@ -184,7 +186,9 @@ margin-bottom: 50px;
     text-decoration-line: none;
     font-style: normal;
 
-    @include for-desktop {
+    @include animation(color);
+
+    @include for-laptop-and-desktop {
         font-size: 18px;
         font-weight: 500;
         line-height: 25px;
@@ -215,7 +219,7 @@ margin-bottom: 50px;
     font-weight: 400;
     letter-spacing: 0.05em;
     
-    @include for-desktop {
+    @include for-laptop-and-desktop {
         // position: absolute;
         // bottom: 0;
         // right: 0;
@@ -263,6 +267,7 @@ margin-bottom: 50px;
 
 .footer-logo__link {
     fill: var(--text-color);
+    @include animation(fill);
     &:hover,
     &:focus {
         fill: var(--hover-color);
@@ -279,6 +284,8 @@ margin-bottom: 50px;
 }
 .footer-insta__link {
     fill: var(--text-color);
+    @include animation(fill);
+
     &:hover,
     &:focus,
     &:active {
@@ -294,7 +301,8 @@ margin-bottom: 50px;
 
 .footer-logo__svg {
     fill:var(--text-color);
-   @include for-desktop{
+    @include animation(fill);
+   @include for-laptop-and-desktop{
     width: 357px;
         height: 100px;
         margin-bottom: 8px;

@@ -1,7 +1,7 @@
 .aboutus__section {
     padding-top: 60px;
     padding-bottom: 65px;
-    @include for-desktop {
+    @include for-laptop-and-desktop {
         position: relative;
     }
     @include for-tablet-only{
@@ -27,7 +27,7 @@
         }
 }
   .elem-about {
-      @include for-desktop {
+      @include for-laptop-and-desktop {
           width: 350px;
           height: 364px;
           display: block;
@@ -43,14 +43,14 @@
   }
 
   .elem-about__svg {
-      @include for-desktop {
+      @include for-laptop-and-desktop {
           width: 398px;
           height: 474px;
           fill: var(--element-color);
       }
   }
 .aboutus__img {
-    @include for-desktop {
+    @include for-laptop-and-desktop {
         position: relative;
         z-index: 5;
     }
@@ -77,6 +77,12 @@
     letter-spacing: 0.05em;
     text-align: left;
     margin-left: 72px;
+    
+    @include for-laptop-only {
+        font-size: 20px;
+        line-height: 28px;
+        min-width: 530px;
+    }
 
     @include for-mobile-and-tablet{
             text-align: center;

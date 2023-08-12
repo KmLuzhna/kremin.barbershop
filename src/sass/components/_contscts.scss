@@ -27,6 +27,9 @@
     // height: 808px;
     // background-image: url(/src/images/contacts-bkgr.png);
 
+    @include for-laptop-only{
+        max-width: 1120px;
+    }
     @include for-desktop {
         height: 808px;
         }
@@ -171,7 +174,7 @@
 
     background-color: var(--background-color);
     
-    @include for-desktop {
+    @include for-laptop-and-desktop {
         padding: 20px 26px;
             border: 0px;
         }
@@ -216,4 +219,7 @@
 .location__map{
     width: 519px;
     height: 385px;
+    @include for-laptop-only {
+        width: 476px;
+    }
 }
