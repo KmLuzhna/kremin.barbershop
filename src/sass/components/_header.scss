@@ -19,7 +19,7 @@
     width: 1280px;
     
     @include for-laptop-only {
-        width: 1120px;
+        min-width: 1120px;
     }
     @media screen and (min-width: 1024px) and (max-width: 1279px) {
         width: 100%;
