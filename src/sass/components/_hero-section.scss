@@ -83,11 +83,13 @@
     @include for-laptop-and-desktop {
         width: 705px;
         height: 375px;
-        margin: 0px 351px 0px 338px;
+        // margin: 0px 351px 0px 338px;
+        margin: 0 auto;
     }
-    @include for-laptop-only{
-        margin: 0 235px 0 235px;
-    }
+    // @include for-laptop-only{
+    //     margin: 0 auto;
+    //     // margin: 0 235px 0 235px;
+    // }
 
     @include for-tablet-only {
         width: 596px;
@@ -109,6 +111,9 @@
     @include for-laptop-and-desktop {
         width: 650px;
         height: 315px;
+
+        display: block;
+        margin: 0 auto;
     }
 
     @include for-tablet-only {

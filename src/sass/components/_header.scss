@@ -12,14 +12,22 @@
     justify-content: space-between;
     height: 98px;
     background-color: #0E0E0E;
-    padding: 0px 80px;
-    margin: 0px -80px;
+
     position: fixed;
     z-index: 100;
-    width: 1280px;
+
+    @include for-desktop {
+        padding: 0px 80px;
+        margin: 0px -80px;
+        width: 1280px;
+    }
     
     @include for-laptop-only {
-        min-width: 1120px;
+        // min-width: 1120px;
+        width: 100%;
+        padding: 0px;
+        margin: 0px -80px;
+
     }
     @media screen and (min-width: 1024px) and (max-width: 1279px) {
         width: 100%;
@@ -48,7 +56,7 @@
     // margin: 0px 65px 0px 70px;
     &__item:not(:last-child) {
         margin-right: 40px;
-        @media screen and (min-width: 1024px) and (max-width: 1439px) {
+        @media screen and (min-width: 1024px) and (max-width: 1279px) {
             margin-right: 20px;
         }
         }
@@ -66,7 +74,7 @@
 
     @include animation(color);
      
-        @media screen and (min-width: 1024px) and (max-width: 1439px) {
+        @media screen and (min-width: 1024px) and (max-width: 1279px) {
             font-size: 20px;
         }
 
@@ -80,6 +88,9 @@
  .header-logo {
      width: 177px;
      height: 42px;
+     @include for-laptop-only {
+        width: auto;
+     }
     }
     
 .header-logo__group{
@@ -89,7 +100,10 @@
 
     @include animation(fill);
     
-    @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    @include for-laptop-only {
+        margin-left: 80px;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
             margin-left: 32px;
         }
     &:hover,
@@ -98,7 +112,7 @@
         fill: var(--hover-color);}
 }
 .header-logo__svg{
-    @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
             width: 170px;
         }
 }
@@ -143,10 +157,13 @@
 .auth-list{
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-        @media screen and (min-width: 1024px) and (max-width: 1439px) {
-            margin-right: 32px;
-        }
+    align-items: center;
+    @include for-laptop-only {
+        margin-right: 80px;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
+        margin-right: 32px;
+    }
 }
 
  .auth-tel__link{
