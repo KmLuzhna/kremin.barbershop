@@ -236,7 +236,7 @@
     }
 }
 .line--l {
-    border-left: 1px solid var(--line-color);
+    border-left: 1px solid #474840;
     margin: 155px 0px 94px 408px;
     height: 815px;
 
@@ -253,7 +253,7 @@
 
 }
 .line--r {
-    border-right: 1px solid var(--line-color);
+    border-right: 1px solid #474840;
     margin: 155px 408px 94px 0px;
 
     position: absolute;
@@ -418,6 +418,14 @@
     @include for-small-mobile {
         font-size: 17px;
     }
+
+    @include animation(color);
+
+    &:hover,
+    &:focus,
+    &:active {
+    color: var(--accent-color);;
+     }
 }
 
 .active-price {
@@ -430,6 +438,13 @@
 .grand-btn {
     @include for-laptop-and-desktop {
         margin-bottom: 25px;
+    }
+    @include animation(color);
+    
+    &:hover,
+    &:focus,
+    &:active {
+    color: var(--accent-color);
     }
 }
 .not-shown {

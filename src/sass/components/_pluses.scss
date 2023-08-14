@@ -88,7 +88,7 @@
 .pluses-list{
     display: flex;
     justify-content: flex-start;
-    @include for-desktop {
+    @include for-laptop-and-desktop {
         position: relative;
         z-index: 15;
     }
@@ -115,9 +115,9 @@
     border: 2px solid var(--white-color);
     cursor: pointer;
 
-    @include for-desktop {
+    @include for-laptop-and-desktop {
         font-size: 17px;
-        font-weight: 600;
+        font-weight: 500;
         line-height: 21px;
         text-transform: uppercase;
         // min-width: 200px;

@@ -138,7 +138,8 @@
         width: max-content;
     
         color: var(--text-color);
-        background: rgba(0, 0, 0, 0);
+        background: linear-gradient(0deg, #292929, #292929), linear-gradient(0deg, #fff, #fff);
+        // background: rgba(0, 0, 0, 0);
         border: 2px solid #FFFFFF;
     
         text-transform: uppercase;
@@ -203,11 +204,11 @@
             fill: var(--accent-color);
         }
  }
-  .menu-svg__item {
-      &:not(:last-child) {
-          margin-bottom: 12px;
-      }
-  }
+//   .menu-svg__item {
+//       &:not(:last-child) {
+//           margin-bottom: 12px;
+//       }
+//   }
 
   .close-menu__svg {
       fill: var(--white-color);

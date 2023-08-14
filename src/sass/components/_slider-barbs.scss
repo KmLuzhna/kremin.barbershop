@@ -264,34 +264,56 @@
 }
 
 .barb__btn {
+    font-family: 'PT Serif Caption', serif;
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: absolute;
+    display: block;
+    background: rgba(0, 0, 0, 0);
+        border: 2px solid #FFFFFF;
+
     @include for-laptop-and-desktop{
     padding: 13px;
-        font-family: 'PT Serif Caption', serif;
-        display: block;
         max-width: min-content;
         padding: 20px 42px;
         color: var(--text-color);
-        text-transform: uppercase;
         font-weight: 500;
         font-size: 21px;
-        letter-spacing: 0.05em;
-        text-align: center;
-        // background-color: #11ffee00;
-        // border: 2px solid var(--accent-color);
-        text-decoration: none;
-         color: var(--text-color);
-        background: rgba(0, 0, 0, 0);
-        border: 2px solid #FFFFFF;
     
-        position: absolute;
         bottom: 1%;
         left: 20%;
     }
     @include for-laptop-only {
         left: 17%;
     }
+    // @include for-mobile-and-tablet{
+    //     display: none;
+    // }
+
     @include for-mobile-and-tablet{
-        display: none;
+        font-weight: 400;
+        color: var(--white-color);
+        background-color: var(--background-btn);
+    }
+    @include for-tablet-only{
+        font-size: 24px;
+        line-height: 32px;
+        padding: 24px 30px;
+
+        bottom: 10px;
+        left: 217px;
+
+    }
+    @include for-mobile-only {
+        font-size: 18px;
+        line-height: 24px;
+        padding: 18px 30px;
+            
+        bottom: 10px;
+        left: 22%;
+
     }
 }
 
