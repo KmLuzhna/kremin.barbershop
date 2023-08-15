@@ -315,7 +315,7 @@
         left: 22%;
     }
     @include for-small-mobile{
-        left: 15%;
+        display: none;
     }
 }
 
