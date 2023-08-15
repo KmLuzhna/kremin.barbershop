@@ -313,7 +313,9 @@
             
         bottom: 10px;
         left: 22%;
-
+    }
+    @include for-small-mobile{
+        left: 15%;
     }
 }
 
