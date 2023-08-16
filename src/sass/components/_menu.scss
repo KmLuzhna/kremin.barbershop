@@ -92,11 +92,22 @@
  .menu-info__item {
     display: flex;
     justify-content: flex-start;
+
+    @include for-tablet-only {
+        min-width: 216px;
+    }
+    @include for-mobile-only {
+        min-width: 195px;
+    }
     &:not(:last-child){
-        margin-bottom: 4px;
+        margin-bottom: 7px;
     }
  }
-
+.menu-info__link{
+    text-decoration: none;
+    display: flex;
+    color: var(--text-color);
+}
  .menu-nav {
         display: flex;
             flex-direction: column;
